@@ -1,0 +1,28 @@
+<!-- stoptime is the length of our experiment in seconds -->
+<shadow stoptime="5" preload="~/.shadow/lib/libshadow-interpose.so" environment="OPENSSL_ia32cap=~0x200000200000000;EVENT_NOSELECT=1;EVENT_NOPOLL=1;EVENT_NOKQUEUE=1;EVENT_NODEVPOLL=1;EVENT_NOEVPORT=1;EVENT_NOWIN32=1">
+    <!-- our network -->
+    <topology path="./topology.test.graphml.xml" />
+
+    <!-- the plug-ins we will be using -->
+    <plugin id="tgen" path="~/.shadow/lib/libshadow-plugin-tgen.so" />
+    <plugin id="tor" path="~/.shadow/lib/libshadow-plugin-tor.so" />
+    <plugin id="tor-preload" path="~/.shadow/lib/libshadow-preload-tor.so" />
+    <plugin id="torctl" path="~/.shadow/lib/libshadow-plugin-torctl.so" />
+
+    <!-- our Tor network infrastructure -->
+    <host id="torclient" quantity="2">
+        <process plugin="tor" preload="tor-preload" starttime="0" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.client.torrc --BandwidthRate 1024000 --BandwidthBurst 1024000" />
+	    <process plugin="torctl" starttime="0" arguments="localhost 9051 STREAM,CIRC,CIRC_MINOR,ORCONN,BW,STREAM_BW,CIRC_BW,CONN_BW,BUILDTIMEOUT_SET,CLIENTS_SEEN,GUARD,CELL_STATS,TB_EMPTY,HS_DESC,HS_DESC_CONTENT"/>
+        <process plugin="tgen" starttime="0" arguments="tgen.torclient.test.graphml.xml" />
+    </host>
+    
+    <host id="relay" bandwidthdown="10240" bandwidthup="10240">
+        <process plugin="tor" preload="tor-preload" starttime="0" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.relay.torrc --BandwidthRate 1024000 --BandwidthBurst 1024000" />
+	    <process plugin="torctl" starttime="0" arguments="localhost 9051 STREAM,CIRC,CIRC_MINOR,ORCONN,BW,STREAM_BW,CIRC_BW,CONN_BW,BUILDTIMEOUT_SET,CLIENTS_SEEN,GUARD,CELL_STATS,TB_EMPTY,HS_DESC,HS_DESC_CONTENT"/>
+    </host>
+
+    <host id="exit" quantity="2" bandwidthdown="10240" bandwidthup="10240">
+        <process plugin="tor" preload="tor-preload" starttime="0" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.exit.torrc --BandwidthRate 1024000 --BandwidthBurst 1024000" />
+	    <process plugin="torctl" starttime="0" arguments="localhost 9051 STREAM,CIRC,CIRC_MINOR,ORCONN,BW,STREAM_BW,CIRC_BW,CONN_BW,BUILDTIMEOUT_SET,CLIENTS_SEEN,GUARD,CELL_STATS,TB_EMPTY,HS_DESC,HS_DESC_CONTENT"/>
+    </host>
+</shadow>
