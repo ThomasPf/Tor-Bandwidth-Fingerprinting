@@ -50,3 +50,6 @@ fabric.properties
 
 # *.iml
 # modules.xml
+StatsScripts/src\+venv/venv/
+
+StatsScripts/src\+venv/\.idea/
