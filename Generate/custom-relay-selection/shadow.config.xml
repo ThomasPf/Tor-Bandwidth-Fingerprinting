@@ -7,6 +7,9 @@
   <host id="server1" iphint="182.22.59.229" geocodehint="JP" typehint="server" bandwidthup="102400" bandwidthdown="102400" quantity="1" cpufrequency="10000000">
     <process plugin="tgen" starttime="1" arguments="conf/tgen.server.graphml.xml"/>
   </host>
+  <host id="server2" iphint="182.22.59.230" geocodehint="JP" typehint="server" bandwidthup="102400" bandwidthdown="102400" quantity="1" cpufrequency="10000000">
+    <process plugin="tgen" starttime="1" arguments="conf/tgen.server.graphml.xml"/>
+  </host>
   <host id="4uthority1" iphint="100.0.0.1" typehint="relay" bandwidthdown="6400" bandwidthup="6400" quantity="1" cpufrequency="3000000">
     <process plugin="tor" preload="tor-preload" starttime="5" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.authority.torrc"/>
     <process plugin="torctl" starttime="6" arguments="localhost 9051 BW"/>
@@ -35,9 +38,9 @@
     <process plugin="tor" preload="tor-preload" starttime="900" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.client.torrc"/>
     <process plugin="tgen" starttime="1200" arguments="conf/tgen.torbulkclient.graphml.xml"/>
   </host>
-  <host id="bulkclient2" geocodehint="DE" typehint="client" quantity="1" cpufrequency="3000000">
+  <host id="bulkclient2" geocodehint="DE" typehint="client" quantity="1" cpufrequency="30 00000">
     <process plugin="tor" preload="tor-preload" starttime="900" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.client.torrc"/>
-    <process plugin="tgen" starttime="1200" arguments="conf/tgen.torbulkclient.graphml.xml"/>
+    <process plugin="tgen" starttime="1200" arguments="conf/tgen.torbulkclient2.graphml.xml"/>
   </host>
 </shadow>
 
