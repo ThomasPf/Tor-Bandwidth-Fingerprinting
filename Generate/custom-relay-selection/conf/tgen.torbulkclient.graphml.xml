@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key attr.name="size" attr.type="string" for="node" id="d5"/>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key attr.name="heartbeat" attr.type="string" for="node" id="d6" />
+<key attr.name="size" attr.type="string" for="node" id="d5"/>
 <key attr.name="type" attr.type="string" for="node" id="d4"/>
 <key attr.name="serverport" attr.type="string" for="node" id="d3"/>
 <key attr.name="socksproxy" attr.type="string" for="node" id="d2"/>
@@ -9,6 +10,7 @@
   <data key="d0">server1:80</data>
   <data key="d3">8888</data>
   <data key="d2">localhost:9000</data>
+  <data key="d6">300 ms</data>
 </node>
 <node id="transfer">
   <data key="d1">tcp</data>
