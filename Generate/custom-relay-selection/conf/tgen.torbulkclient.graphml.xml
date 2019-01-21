@@ -15,7 +15,7 @@
 <node id="transfer">
   <data key="d1">tcp</data>
   <data key="d4">get</data>
-  <data key="d5">5 MiB</data>
+  <data key="d5">50 MiB</data>
 </node>
 <edge source="start" target="transfer"/>
 <edge source="transfer" target="start"/>
