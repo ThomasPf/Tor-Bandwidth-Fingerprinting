@@ -38,8 +38,10 @@ def get_files_from_my_path(window_size: int):
         df_merged = pd.merge(df_merged, dataframes[i], on='timestamp')
 
     df_merged = df_merged.drop('timestamp', 1)
+    #below drops all 0 rows
+    df_merged = df_merged.loc[~(df_merged == 0).any(axis=1)]
 
-    df_merged_rolling = df_merged.rolling(window=window_size)
+    df_merged_rolling = df_merged.rolling(window=window_size, center=True, )
 
     correlations = (df_merged_rolling['value_0'].corr(df_merged_rolling['value_1']))
     columns = len(correlations.columns)
@@ -76,4 +78,4 @@ def get_dfs_from_path(onlyfiles: list):
         dataframes.append(pd.read_csv(mypath + file))
 
 
-get_files_from_my_path(250)
+get_files_from_my_path(50)
