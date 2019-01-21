@@ -35,9 +35,9 @@
     <process plugin="tor" preload="tor-preload" starttime="900" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.client.torrc"/>
     <process plugin="tgen" starttime="1200" arguments="conf/tgen.torbulkclient.graphml.xml"/>
   </host>
-  <host id="bulkclient2" geocodehint="ID" typehint="client" quantity="1" cpufrequency="2600000">
+  <host id="bulkclient2" geocodehint="DE" typehint="client" quantity="1" cpufrequency="3000000">
     <process plugin="tor" preload="tor-preload" starttime="900" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.client.torrc"/>
-    <process plugin="tgen" starttime="900" arguments="conf/tgen.torbulkclient.graphml.xml"/>
+    <process plugin="tgen" starttime="1200" arguments="conf/tgen.torbulkclient.graphml.xml"/>
   </host>
 </shadow>
 
