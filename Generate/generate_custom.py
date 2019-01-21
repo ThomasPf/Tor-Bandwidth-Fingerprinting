@@ -173,10 +173,16 @@ def main():
     ap.add_argument('--nbridgeauths', action="store", type=int, dest="nbridgeauths", help="number N of bridge authorities for the generated topology (0 or 1)", metavar='N', default=NBRIDGEAUTHS)
     ap.add_argument('--nrelays', action="store", type=int, dest="nrelays", help="number N of total relays for the generated topology", metavar='N', default=NRELAYS)
     ap.add_argument('--nbridges', action="store", type=int, dest="nbridges", help="number N of total bridges for the generated topology", metavar='N', default=NBRIDGES)
+    ap.add_argument('--num_exitguards', action="store", type=int, help="Number of exit guards, if set: ignore fraction calculation", metavar='N', default=None)
+    ap.add_argument('--num_guards', action="store", type=int, help="Number of guards, if set: ignore fraction calculation", metavar='N', default=None)
+    ap.add_argument('--num_exits', action="store", type=int, help="Number of exit relays, if set: ignore fraction calculation", metavar='N', default=None)
+    ap.add_argument('--num_middles', action="store", type=int, help="Number of middle relays, if set: ignore fraction calculation", metavar='N', default=None)
     ap.add_argument('--nclients', action="store", type=int, dest="nclients", help="number N of total clients for the generated topology", metavar='N', default=NCLIENTS)
     ap.add_argument('--nbridgeclients', action="store", type=int, dest="nbridgeclients", help="number N of total clients running with bridges for the generated topology", metavar='N', default=NBRIDGECLIENTS)
     ap.add_argument('--fweb', action="store", type=float, dest="fweb", help="fraction F of web client connections", metavar='F', default=FWEB)
     ap.add_argument('--fbulk', action="store", type=float, dest="fbulk", help="fraction F of bulk HTTP client connections", metavar='F', default=FBULK)
+    ap.add_argument('--num_webclients', action="store", type=int, help="Number of web clients, if set: ignore fraction calculation", metavar='N', default=None)
+    ap.add_argument('--num_bulkclients', action="store", type=int, help="Number of bulk clients, if set: ignore fraction calculation", metavar='N', default=None)
     ap.add_argument('--nperf50k', action="store", type=float, dest="nperf50k", help="number N of 50KiB perf clients", metavar='F', default=NPERF50K)
     ap.add_argument('--nperf1m', action="store", type=float, dest="nperf1m", help="number N of 1MiB perf clients", metavar='F', default=NPERF1M)
     ap.add_argument('--nperf5m', action="store", type=float, dest="nperf5m", help="number N of 5MiB perf clients", metavar='F', default=NPERF5M)
@@ -189,6 +195,9 @@ def main():
     ap.add_argument('descriptors', action="store", type=str, help="path to top-level directory containing current Tor server-descriptors", metavar='DESCRIPTORS', default=None)
     ap.add_argument('extrainfos', action="store", type=str, help="path to top-level directory containing current Tor extra-infos", metavar='EXTRAINFOS', default=None)
     ap.add_argument('connectingusers', action="store", type=str, help="path to csv containing Tor directly connecting user country data", metavar='CONNECTINGUSERS', default=None)
+
+
+
 
     # get arguments, accessible with args.value
     args = ap.parse_args()
@@ -213,6 +222,12 @@ def main():
         log("please ensure 'tor' and 'tor-gencert' are in your 'PATH'")
         exit(-1)
     args.devnull = open("/dev/null", 'wb')
+
+    #Check if working direcotyr is empty
+    cwd = os.getcwd()
+    if os.listdir(cwd):
+        log("Current working direcory is not empy")
+        return
 
     generate(args)
     log("finished generating {0}/shadow.config.xml".format(os.getcwd()))
@@ -249,25 +264,43 @@ def generate(args):
         else: middles.append(relay)
     log("Done separating relay types")
 
-    assert len(exitguards) > 0
-    assert len(exits) > 0
-    assert len(guards) > 0
-    assert len(middles) > 0
+    #Simple check
+    assert args.nrelays > 0
+    assert len(relays) > 0
+    #assert len(exitguards) > 0
+    #assert len(exits) > 0
+    #assert len(guards) > 0
+    #assert len(middles) > 0
 
     geoentries = getGeoEntries(args.geoippath)
     log("Done parsing geo IP entries")
 
     # sample for the relays we'll use for our nodes
     log("Starting sampling, may take a while...")
+
+    #Realys by ratio
+    log("Calculate num of relays by type using ratio")
     n_exitguards = int(float(len(exitguards)) / float(len(relays)) * args.nrelays)
     n_guards = int(float(len(guards)) / float(len(relays)) * args.nrelays)
     n_exits = int(float(len(exits)) / float(len(relays)) * args.nrelays)
     n_middles = int(float(len(middles)) / float(len(relays)) * args.nrelays)
 
-    if n_exitguards == 0:
-        log("Warning: Must have at least 1 exit guard, setting to 1")
-        n_exitguards = 1
-    if n_guards == 0:
+    #Relays provided by user
+    if args.num_exitguards is not None:
+        log("Num exitguards provided")
+        n_exitguards = args.num_exitguards
+    if args.num_guards is not None:
+        log("Num guards provided")
+        n_guards = args.num_guards
+    if args.num_exits is not None:
+        log("Num exits provided")
+        n_exits = args.num_exits
+    if args.num_middles is not None:
+        log("Num middles provided")
+        n_middles = args.num_middles
+
+    #Check if we have a valid tor topology
+    if n_exitguards == 0 and n_guards == 0:
         log("Warning: Must have at least 1 guard node, setting to 1")
         n_guards = 1
     if n_exits == 0:
@@ -277,26 +310,32 @@ def generate(args):
         log("Warning: Must have at least 1 middle node, setting to 1")
         n_middles = 1
 
-    assert n_exitguards > 0
-    assert n_guards > 0
-    assert n_exits > 0
-    assert n_middles > 0
+    totalrelays = n_exitguards + n_guards + n_exits + n_middles
+    if totalrelays != args.nrelays:
+        log("total number of relays mismatches args.nrelays")
+
+    n_guards += 1 #add 1 for authority node
+
+    #assert n_exitguards > 0
+    #assert n_guards > 0
+    #assert n_exits > 0
+    #assert n_middles > 0
 
     exitguards_nodes = getRelays(exitguards, n_exitguards, geoentries, args.descriptors, args.extrainfos, validyear, validmonth)
     log("getRelays exitguards_nodes done")
-    assert len(exitguards_nodes) > 0
+    assert len(exitguards_nodes) == n_exitguards
 
     guards_nodes = getRelays(guards, n_guards, geoentries, args.descriptors, args.extrainfos, validyear, validmonth)
     log("getRelays guards_nodes done")
-    assert len(guards_nodes) > 0
+    assert len(guards_nodes) == n_guards
 
     exits_nodes = getRelays(exits, n_exits, geoentries, args.descriptors, args.extrainfos, validyear, validmonth)
     log("getRelays exits_nodes done")
-    assert len(exits_nodes) > 0
+    assert len(exits_nodes) == n_exits
 
     middles_nodes = getRelays(middles, n_middles, geoentries, args.descriptors, args.extrainfos, validyear, validmonth)
     log("getRelays middles_nodes done")
-    assert len(middles_nodes) > 0
+    assert len(middles_nodes) == n_middles
 
     # get the fastest nodes at the front
     exitguards_nodes.reverse()
@@ -309,6 +348,7 @@ def generate(args):
 
     clientCountryCodes = getClientCountryChoices(args.connectingusers)
     log("Done parsing relay users by country statistics")
+
 
     log("Starting writing output files")
     # output choices
@@ -538,7 +578,15 @@ def generate(args):
 
     # clients
     nbulkclients = int(args.fbulk * args.nclients)
+    if args.num_bulkclients is not None:
+        nbulkclients = int(args.num_bulkclients)
+        log("Using num_bulkclients provided by user")
+
     nwebclients = int(args.nclients - nbulkclients)
+    if args.num_webclients is not None:
+        nwebclients = args.num_webclients
+        log("Using num_webclients provided by user")
+
     nperf50kclients = int(args.nperf50k)
     nperf1mclients = int(args.nperf1m)
     nperf5mclients = int(args.nperf5m)
@@ -859,11 +907,15 @@ def chooseServer(servers):
 
     return ip, code
 
+#list of relays from consensus file, number of relays we want, geoentries filepath, args.descriptors path, args.extrainfos path, validyear, validmonth)
 def getRelays(relays, k, geoentries, descriptorpath, extrainfopath, validyear, validmonth):
+    if k == 0:
+        return []
+
     sample = sample_relays(relays, k)
 
     # maps for easy relay lookup while parsing descriptors
-    ipmap, fpmap = dict(), dict()
+    ipmap, fpmap = dict(), dict() #IP map & Fingerprint map
     for s in sample:
         if s.ip not in ipmap:
             ipmap[s.ip] = s
@@ -1140,7 +1192,7 @@ def generate_tgen_filetransfer_clients(servers):
     # webclients
     G = DiGraph()
 
-    G.add_node("start", socksproxy="localhost:9000", serverport="8888", peers=servers)
+    G.add_node("start", socksproxy="localhost:9000", serverport="8888", peers=servers, heartbeat="100 ms")
     G.add_node("transfer", type="get", protocol="tcp", size="320 KiB")
     G.add_node("pause", time="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60")
 
@@ -1153,7 +1205,7 @@ def generate_tgen_filetransfer_clients(servers):
     # bulkclients
     G = DiGraph()
 
-    G.add_node("start", socksproxy="localhost:9000", serverport="8888", peers=servers)
+    G.add_node("start", socksproxy="localhost:9000", serverport="8888", peers=servers, heartbeat="100 ms")
     G.add_node("transfer", type="get", protocol="tcp", size="5 MiB")
 
     G.add_edge("start", "transfer")
