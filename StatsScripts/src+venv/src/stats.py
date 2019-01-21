@@ -6,9 +6,10 @@ from os.path import isfile, join
 import matplotlib.pyplot as plt
 import pandas as pd
 
-mypath = "/Users/Pfann/Desktop/Computer_science/Tor-Bandwidth-Fingerprinting/extracted/"
+mypath: str = "/Users/Pfann/Desktop/Computer_science/Tor-Bandwidth-Fingerprinting/extracted/"
 dataframes = []
-onlyfiles_len = 0
+onlyfiles_len: int = 0
+debug: bool = False
 
 
 # start with this method if you want to give your own path

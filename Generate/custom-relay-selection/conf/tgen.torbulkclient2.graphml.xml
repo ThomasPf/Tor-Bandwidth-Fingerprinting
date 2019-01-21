@@ -7,7 +7,7 @@
 <key attr.name="protocol" attr.type="string" for="node" id="d1"/>
 <key attr.name="peers" attr.type="string" for="node" id="d0"/>
 <graph edgedefault="directed"><node id="start">
-  <data key="d0">server1:80</data>
+  <data key="d0">server2:80</data>
   <data key="d3">8888</data>
   <data key="d2">localhost:9000</data>
   <data key="d6">300 ms</data>
