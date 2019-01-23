@@ -1,0 +1,2 @@
+Scenario 3
+	multiple noise clients with 4 MiB download attempt with 30 seconds pauses, starting at different times

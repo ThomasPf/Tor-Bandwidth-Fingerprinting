@@ -1,0 +1,4 @@
+Scenario 5
+	multiple noise clients with 2 MiB download attempt with random pauses, starting at different times
+	multiple noise clients with 50 KiB download attempts with random pauses, starting at different times
+	with emphasis on the middle relay having significantly lower bandwidth than edge relays

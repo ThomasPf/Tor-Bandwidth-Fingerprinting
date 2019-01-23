@@ -1,0 +1,7 @@
+adversaryclient relayexitguard1 relaymiddle1 relayexit1 
+victimclient relayexitguard1 relaymiddle1 relayexit1 
+noiseclient1 relayexitguard1 relaymiddle1 relayexit1 
+noiseclient2 relayexitguard1 relaymiddle1 relayexit1 
+noiseclient3 relayexitguard1 relaymiddle1 relayexit1 
+noiseclient4 relayexitguard1 relaymiddle1 relayexit1 
+
