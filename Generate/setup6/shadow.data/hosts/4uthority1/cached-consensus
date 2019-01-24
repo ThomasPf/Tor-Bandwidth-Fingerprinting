@@ -1,0 +1,64 @@
+network-status-version 3
+vote-status consensus
+consensus-method 26
+valid-after 2000-01-01 00:55:00
+fresh-until 2000-01-01 01:00:00
+valid-until 2000-01-01 01:10:00
+voting-delay 20 20
+client-versions 
+server-versions 
+known-flags Authority Exit Fast Guard HSDir NoEdConsensus Running Stable V2Dir Valid
+recommended-client-protocols Cons=1-2 Desc=1-2 DirCache=1 HSDir=1 HSIntro=3 HSRend=1 Link=4 LinkAuth=1 Microdesc=1-2 Relay=2
+recommended-relay-protocols Cons=1-2 Desc=1-2 DirCache=1 HSDir=1 HSIntro=3 HSRend=1 Link=4 LinkAuth=1 Microdesc=1-2 Relay=2
+required-client-protocols Cons=1-2 Desc=1-2 DirCache=1 HSDir=1 HSIntro=3 HSRend=1 Link=4 LinkAuth=1 Microdesc=1-2 Relay=2
+required-relay-protocols Cons=1 Desc=1 DirCache=1 HSDir=1 HSIntro=3 HSRend=1 Link=3-4 LinkAuth=1 Microdesc=1 Relay=1-2
+dir-source 4uthority1 4440496A959904E3BB6101AC0886DD79E3AC6CAB 100.0.0.1 100.0.0.1 9112 9111
+contact shadow-support@cs.umn.edu
+vote-digest 17A6CDCBDFE9C6E70911CF8DF091CBC8B1A8BA76
+r relaymiddle2 FdgOT6N8hzrm0PgfS+im7+cx+8o 7tJhhJcitlV9G08vwr8SOFNXZjU 2000-01-01 00:07:40 45.125.166.59 9111 9112
+s Fast Running V2Dir Valid
+v Tor 0.3.2.10
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Unmeasured=1
+p reject 1-65535
+r relayexit1 K8mkntS1BhENnzHyQ88j5Fqh1Zk 51gZh+RnqzpB/mp/MBvcVNX9goA 2000-01-01 00:04:20 5.34.183.105 9111 9112
+s Exit Fast HSDir Running Stable V2Dir Valid
+v Tor 0.3.2.10
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Unmeasured=1
+p accept 1-65535
+r relayexit2 SAdOekP2vbgNIiWT8h9WlJ8F8Ko dslt6LyjDEZWZMrP57TTKxAmnGE 2000-01-01 00:04:20 5.34.183.106 9111 9112
+s Fast HSDir Running Stable V2Dir Valid
+v Tor 0.3.2.10
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Unmeasured=1
+p accept 1-65535
+r relayexitguard1 XuctjMxN10pHlcfKl1K9DL0+Sbw vsFKmLf+b+sDmrfvWpNHpHph5+w 2000-01-01 00:01:00 178.239.176.73 9111 9112
+s Exit Fast Guard HSDir Running Stable V2Dir Valid
+v Tor 0.3.2.10
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Unmeasured=1
+p accept 1-65535
+r 4uthority1 Y/RGXSx62ju27KIZvNzuSLzQip8 qkQaj85GHwvIeWvGlFIXNaQmx/Y 2000-01-01 00:05:06 100.0.0.1 9111 9112
+s Authority Fast Guard HSDir Running Stable V2Dir Valid
+v Tor 0.3.2.10
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Unmeasured=1
+p reject 1-65535
+r relaymiddle1 6HPaFOAXEaux5bdMgRTgoBmKiUo V0Qe6vfmnzI1LKGiFBvqKF5FRnQ 2000-01-01 00:07:40 45.125.166.58 9111 9112
+s Fast Running V2Dir Valid
+v Tor 0.3.2.10
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Unmeasured=1
+p reject 1-65535
+directory-footer
+bandwidth-weights Wbd=3333 Wbe=0 Wbg=0 Wbm=10000 Wdb=10000 Web=10000 Wed=3333 Wee=10000 Weg=3333 Wem=10000 Wgb=10000 Wgd=3333 Wgg=10000 Wgm=10000 Wmb=10000 Wmd=3333 Wme=0 Wmg=0 Wmm=10000
+directory-signature 4440496A959904E3BB6101AC0886DD79E3AC6CAB A67636325C58733854356305BD125F946867E546
+-----BEGIN SIGNATURE-----
+PQOnbjSZrGPxCdq2AUqizFaaDtKD02NCVK5QBY7yOuXQxgA8Kt48UnH7x6JDSNwp
+18vudIbFe0Km80uSSoq0W8UnFjojZP/uJaHUcLCvZxSOAdBM31Aos4a6/dYcg94p
+tdfVEGcoaRa7ACpSLtoULKW376mryGDDO2hf+lB43Q3Qtw3bEw3N9ZOMCASS1sWi
+P3HTapPG30yZ55HVmbNdQ72/cwDzVIOZ84It1GvUUpcFxafXTTkKHEz8kS7hjyM7
+6Oq7S33a7Mi000eJvgL6sqgG6Lw9tKBTQSEDShaEngJ1lW1l08QjtNTM0wE2852A
+1G9OCTHHVTJZs7xQqs8JyQ==
+-----END SIGNATURE-----

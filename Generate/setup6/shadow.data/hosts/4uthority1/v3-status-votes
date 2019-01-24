@@ -1,0 +1,140 @@
+network-status-version 3
+vote-status vote
+consensus-methods 13 14 15 16 17 18 19 20 22 23 24 25 26
+published 2000-01-01 00:59:21
+valid-after 2000-01-01 01:00:00
+fresh-until 2000-01-01 01:05:00
+valid-until 2000-01-01 01:15:00
+voting-delay 20 20
+recommended-relay-protocols Cons=1-2 Desc=1-2 DirCache=1 HSDir=1 HSIntro=3 HSRend=1 Link=4 LinkAuth=1 Microdesc=1-2 Relay=2
+recommended-client-protocols Cons=1-2 Desc=1-2 DirCache=1 HSDir=1 HSIntro=3 HSRend=1 Link=4 LinkAuth=1 Microdesc=1-2 Relay=2
+required-relay-protocols Cons=1 Desc=1 DirCache=1 HSDir=1 HSIntro=3 HSRend=1 Link=3-4 LinkAuth=1 Microdesc=1 Relay=1-2
+required-client-protocols Cons=1-2 Desc=1-2 DirCache=1 HSDir=1 HSIntro=3 HSRend=1 Link=4 LinkAuth=1 Microdesc=1-2 Relay=2
+known-flags Authority Exit Fast Guard HSDir Running Stable V2Dir Valid
+flag-thresholds stable-uptime=3285 stable-mtbf=3100 fast-speed=0 guard-wfu=98.000% guard-tk=0 guard-bw-inc-exits=12000000 guard-bw-exc-exits=12000000 enough-mtbf=0 ignoring-advertised-bws=0
+params 
+dir-source 4uthority1 4440496A959904E3BB6101AC0886DD79E3AC6CAB 100.0.0.1 100.0.0.1 9112 9111
+contact shadow-support@cs.umn.edu
+shared-rand-participate
+shared-rand-commit 1 sha3-256 4440496A959904E3BB6101AC0886DD79E3AC6CAB AAAAADhtRBYkwlIrQeVxyQ4BbMmX4lOWM1krv9U+uJZ6QB7xc4/0UA== AAAAADhtRBbPoWzPkO6zI5VVDv8NI7YuUhU8RSXTs/pz4gjDNrVOYw==
+dir-key-certificate-version 3
+fingerprint 4440496A959904E3BB6101AC0886DD79E3AC6CAB
+dir-key-published 2019-01-15 17:41:40
+dir-key-expires 2021-01-15 17:41:40
+dir-identity-key
+-----BEGIN RSA PUBLIC KEY-----
+MIIBigKCAYEAtcrhcPHkglJzUgQagsAhIXJzgDWKQNslMHxJxuDYOH56eBC9bad0
+KBCjtp7e5+zgHE8jo8uKAjrxbgjYhWXBPzWj+10Q8Fws0nic0/hnaiNDcyddYi8Y
+dME3kpHQPs8OKp09XhuaVMTAmsmIZshUEhW7Q5pGtSZ4ubKMIblO1kw+NymeRCAM
+IUYePgZ7MhIHr9CAAaaA6xKhFPtDtqnsPUe/yXZZV+XwT3lKaK02+sElX+1bfoaH
+ZssFtn9DSNGapppmPXZPjZBq80Vq9FLJ6J351Xod+EIX1RlOiG/lT0ekueRZB18n
+KErMt1QS2FSneo05Dc4AWTpc7OSh+oG7gY5fu82Ym/+y+LRj7WVEVzDmtEO0L0mw
+Gnazx5OeS4/4F/dggqKwzQJsv8uzMfLGvypWb0FRjqrXeEIDoaBb4CASv9EoKP+V
+lWU1Kbz17aOrWRRgEDrRudimvoIOLjMIAFW/1+vcGVmQc1ER+S7EoQdIqdUeBPdK
+EZwTX4emFGRzAgMBAAE=
+-----END RSA PUBLIC KEY-----
+dir-signing-key
+-----BEGIN RSA PUBLIC KEY-----
+MIIBCgKCAQEAxUa41IxUIIC5fyY1xthlBCj6a6EL4RFtw11IkG4dq93PTJCQkd8z
+L1Q6KP1CfkO7/ZWHR0Q6VLmGQktjfwLA6hJbhE/IqZE/xsm7OYip5MYijvB5fK94
+og3z7FBS035CojIhNPLh0/rqCq4yxkiZUT62VWT1lbIMO1Hu6p1weRQVzxM/Hq+K
+9OjNNNKDIxDaQigm3/61kUKTZdtYFRO7ggpz3YHLytGMIv/IxMXkuFfvXK9DDyTn
+/mN5uBq7jWv1bmsdnxTcu/kvyhn6bHxh3MJg8PpO9ge/fzSABJvAlOO8bfETSCPa
+pUgMq1ftHmHrTvm7cCb7Ihrr+AIQLpS3MwIDAQAB
+-----END RSA PUBLIC KEY-----
+dir-key-crosscert
+-----BEGIN ID SIGNATURE-----
+PvF4aFDUzn9ck3q56bEnEwiU9vLDRGc6IR763TvZ3kWvKiLUAX2EGz1KSlz1Yubm
+TLVNwvdOgZo0AS+YJvp1gUYMVQ6FxM9qxgstND1ZVmZzDA6UiOUxdRjoYjud0JXw
+jm5QLIfn2AsvcE+2pp9G2APhx44wsj25oS0n9ZGMp4h6+uQVX4gqAaePT0fX0c7h
+z9yskz3X2SpRWoU2UkYOyGsvRwAREjqhFcTBNGW9YRYpb/m2n4m+PZYcToMdLH05
+mTTvpOBijcNV8Tpf+lKcf9rLqb/kjgKx+h8EwvmJr+SGcmtFa/AKbnzyLr3hsI0v
+rpKYpw7plIKx1gVOYqyxFA==
+-----END ID SIGNATURE-----
+dir-key-certification
+-----BEGIN SIGNATURE-----
+N/N07xLfwUabarf92Mr6mydoB+jstUcvHrYFLEB9uXJuB4xtHhDRpvJMOyHcLzrU
+sgs5jGSC7fWTkypepSEqoDGfV+Mc6KPEETLQnTQQE1pkBgu39wSpV5WrM5mphhGl
+ZRYBcOP7cTkPqT6jevKAdi+rtbfguqHmT5sUg7t6xKhp71PV/nLb0n2BcyNf8MPd
+l0mLtMsbx3GDuh00hZ0Vy+yYozHHlZt6HbUExDJNGsUJvt92uCI18LUiaHzAbM8h
+a/hDmujEUxD27MZA4T374hsvsvo/S4rP09TBLZF1r2Wi04KTJcQTxxdvNBT03eQX
+6tnyisxymW9kw6RpuozPnj0nx7cP3viy/2cICJdOZ+FCrPSmBy9UbnjGMlKej/60
+SwsT5Ugz0H1k5Mw9mrYa+vQh51f/f4WJHOv7F36/ul618wPOgrqZe3SpKpzn2mWs
+4ql5ykCK1v+0TugRLtw+rY2DAHytvESQy5quweUzzZqMyXU7ZIvzr3/aMi/tqTZz
+-----END SIGNATURE-----
+r relaymiddle2 FdgOT6N8hzrm0PgfS+im7+cx+8o 7tJhhJcitlV9G08vwr8SOFNXZjU 2000-01-01 00:07:40 45.125.166.59 9111 9112
+s Fast Running V2Dir Valid
+v Tor 0.3.2.10
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0
+p reject 1-65535
+id ed25519 s7/fpkb71fOfTCqcNSiAKdoth9SVc9A+uhZQROUBLq0
+m 13,14,15 sha256=nBVgZjOcU5P3ApqIEwzrhbKd+s1iYVUPIyha5MctB4U
+m 16,17 sha256=vlnI9sGzn9Vjk7pmbFibVQZvTHuqSRl5Vnn8M9+ZHTM
+m 18,19,20 sha256=zOfnAgQwYTwfXgANYQ4ReK9PF3Gypc7oFkPWqHDRyiU
+m 22,23,24,25,26 sha256=A+k/jMdxayDesTROOdHi6okUcLtOGo9cHVrKKkbsomg
+r relayexit1 K8mkntS1BhENnzHyQ88j5Fqh1Zk 51gZh+RnqzpB/mp/MBvcVNX9goA 2000-01-01 00:04:20 5.34.183.105 9111 9112
+s Exit Fast HSDir Running Stable V2Dir Valid
+v Tor 0.3.2.10
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Measured=988
+p accept 1-65535
+id ed25519 mkhi3J2zlMyN69/u4RK2d2v0AV1T4KINhoJRGXzQtOA
+m 13,14,15 sha256=0mm6juNa1x2gbNX0Dhfex8eVumxg9d6+oOhasmTv5hg
+m 16,17 sha256=4ENDemPVSFgte99mmgi3ERv1+FwVJK+AyQe2lPzCLK4
+m 18,19,20 sha256=Qxfr2fi6gMJrn7OvLv78aeTBSoNEfRtuq+Xu/MWaZwM
+m 22,23,24,25,26 sha256=NRX+OEZytOwMdPIkGoaI+xhwgdAb/I9H5FHKDe00xF8
+r relayexit2 SAdOekP2vbgNIiWT8h9WlJ8F8Ko dslt6LyjDEZWZMrP57TTKxAmnGE 2000-01-01 00:04:20 5.34.183.106 9111 9112
+s Fast HSDir Running Stable V2Dir Valid
+v Tor 0.3.2.10
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0
+p accept 1-65535
+id ed25519 dq2Zgxt1Usd5xfWXwk95hRaq06irZNhVGP38axdZ3kI
+m 13,14,15 sha256=2ubw112xEfpx7dbE2DadndbN8hQHHsLyYqNP9eyZpkw
+m 16,17 sha256=MIejNiZUNUgfgf1NXX1cHZWqssphIwsAaQsxASCWZqs
+m 18,19,20 sha256=XD4+1di8hyydRHFl/zOVbdSmZM//E3dnLiD4OP2frG0
+m 22,23,24,25,26 sha256=NtLibbVuS4gbvWUNJEUuPCaWKlvOX3Htjb0SbRpb1yE
+r relayexitguard1 XuctjMxN10pHlcfKl1K9DL0+Sbw vsFKmLf+b+sDmrfvWpNHpHph5+w 2000-01-01 00:01:00 178.239.176.73 9111 9112
+s Exit Fast Guard HSDir Running Stable V2Dir Valid
+v Tor 0.3.2.10
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Measured=17500
+p accept 1-65535
+id ed25519 usuC6120xAuGbMZq/msrtdY3roMFttVIum8PszuOERw
+m 13,14,15 sha256=XVVX3VU/nJbe9OfADgrJs0raV3RBm7EbAcYtFCvGhHs
+m 16,17 sha256=xTwSwQGrt21Ry6KqbE9XnmlDV3liaxeUkJwuKRpmV2E
+m 18,19,20 sha256=3JpIWJ9T+UwgSCp7UK/5OK0QiEjqVUEZZuqL7a82nvA
+m 22,23,24,25,26 sha256=bMpaoW88dOW/6+26F2m3Ju889lPJq/03pf7lh1R7Mbo
+r 4uthority1 Y/RGXSx62ju27KIZvNzuSLzQip8 qkQaj85GHwvIeWvGlFIXNaQmx/Y 2000-01-01 00:05:06 100.0.0.1 9111 9112
+s Authority Fast Guard HSDir Running Stable V2Dir Valid
+v Tor 0.3.2.10
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Measured=12000
+p reject 1-65535
+id ed25519 9ZE4BqxFAbIDPRu/4LbLccLFfiakZiC0CgGvPng7M/A
+m 13,14,15 sha256=c5WybiI96Vh4ETyro9m2p1VICcp3aaFNcA9hkoKSiM8
+m 16,17 sha256=lKxmRQvZgod+kQb5LfqjWcOOVgpqn0uAJ1Pk7kZRi/o
+m 18,19,20 sha256=2O7vBaAcaEv5ZR12ai5XuJYGx9Ajduniyf2VlCTNNVU
+m 22,23,24,25,26 sha256=nAOqoNtjtnc5BgU0LtP12v7QT3cx6ShtnceJUnfZCuY
+r relaymiddle1 6HPaFOAXEaux5bdMgRTgoBmKiUo V0Qe6vfmnzI1LKGiFBvqKF5FRnQ 2000-01-01 00:07:40 45.125.166.58 9111 9112
+s Fast Running V2Dir Valid
+v Tor 0.3.2.10
+pr Cons=1-2 Desc=1-2 DirCache=1-2 HSDir=1-2 HSIntro=3-4 HSRend=1-2 Link=1-5 LinkAuth=1,3 Microdesc=1-2 Relay=1-2
+w Bandwidth=0 Measured=657
+p reject 1-65535
+id ed25519 hH1n+sqc1Nv+diZUAWyslGVYFCCraV6hHgHjAjaJKD0
+m 13,14,15 sha256=LE4PSo5FUi/AnJGpZU9VoONOLtiT8mssvv8xEGcqb9g
+m 16,17 sha256=du/w+aSbT8eSHNH8m2ISBp+8ws1d4E2xkYcqDLYa2eU
+m 18,19,20 sha256=gzNYOUoNTiXfYyrpzLHKHhHcJ5lM082FBl3zpvdxaBU
+m 22,23,24,25,26 sha256=aztFZca1VQOSENQ2VDqXTMLlotaWVBQ69Bb3k9f9ks4
+directory-footer
+directory-signature 4440496A959904E3BB6101AC0886DD79E3AC6CAB A67636325C58733854356305BD125F946867E546
+-----BEGIN SIGNATURE-----
+TkSBKBwvBU41Vl6WmSAFPPhU999rxT99o1GLx9MRVPTe04L2+jOmq2dPLjd54uZ4
+hhWpl2INgLUM/ZM47dEIt8AlSoHqwHmoVgaYvXVf8/ICv5jr3D7os2iTVyuqdSQU
+A3nj1x1UmQucTQxyo5cei+wHWQhT4jn7O1LNathxB8L8klkoISpC1/K7ORMNd0nU
+MXbebfqN78r2rkwlJOOUN13RBr7FRjzPX74KE8zuPtQn4TBvv39nyt1fbhvPGSW1
+KSydC72q45J6IRRvVSK5yKDvlyolpQiZFsi/pGUW4goKTEp3xo5kBoN5+5/IPjv0
+fynX7lP0IM48cY0h/y8ddw==
+-----END SIGNATURE-----

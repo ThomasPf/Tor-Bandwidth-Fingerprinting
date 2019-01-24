@@ -1,0 +1,60 @@
+# Tor state file last generated on 2000-01-01 00:52:30 local time
+# Other times below are in UTC
+# You *do not* need to edit this file.
+
+Guard in=default rsa_id=5EE72D8CCC4DD74A4795C7CA9752BD0CBD3E49BC nickname=relayexitguard1 sampled_on=1999-12-30T20:18:15 sampled_by=0.3.2.10 listed=1 confirmed_on=1999-12-21T04:16:46 confirmed_idx=0 pb_use_attempts=3.000000 pb_use_successes=3.000000 pb_circ_attempts=110.000000 pb_circ_successes=110.000000 pb_successful_circuits_closed=110.000000
+Guard in=default rsa_id=63F4465D2C7ADA3BB6ECA219BCDCEE48BCD08A9F nickname=4uthority1 sampled_on=1999-12-25T19:21:39 sampled_by=0.3.2.10 listed=1
+TorVersion Tor 0.3.2.10 (git-31cc63deb69db819)
+LastWritten 2000-01-01 00:52:30
+TotalBuildTimes 110
+CircuitBuildTimeBin 575 5
+CircuitBuildTimeBin 625 13
+CircuitBuildTimeBin 675 7
+CircuitBuildTimeBin 725 9
+CircuitBuildTimeBin 825 2
+CircuitBuildTimeBin 875 2
+CircuitBuildTimeBin 1125 1
+CircuitBuildTimeBin 1175 1
+CircuitBuildTimeBin 1225 2
+CircuitBuildTimeBin 1325 1
+CircuitBuildTimeBin 1375 2
+CircuitBuildTimeBin 1475 1
+CircuitBuildTimeBin 1525 2
+CircuitBuildTimeBin 1575 1
+CircuitBuildTimeBin 1625 2
+CircuitBuildTimeBin 1675 1
+CircuitBuildTimeBin 1725 3
+CircuitBuildTimeBin 1775 2
+CircuitBuildTimeBin 1825 2
+CircuitBuildTimeBin 1925 1
+CircuitBuildTimeBin 1975 1
+CircuitBuildTimeBin 2125 1
+CircuitBuildTimeBin 2175 1
+CircuitBuildTimeBin 2225 2
+CircuitBuildTimeBin 2275 2
+CircuitBuildTimeBin 2325 3
+CircuitBuildTimeBin 2425 4
+CircuitBuildTimeBin 2475 2
+CircuitBuildTimeBin 2525 1
+CircuitBuildTimeBin 2625 1
+CircuitBuildTimeBin 2675 1
+CircuitBuildTimeBin 2725 1
+CircuitBuildTimeBin 2775 5
+CircuitBuildTimeBin 2825 6
+CircuitBuildTimeBin 2875 1
+CircuitBuildTimeBin 2975 1
+CircuitBuildTimeBin 3025 1
+CircuitBuildTimeBin 3075 3
+CircuitBuildTimeBin 3125 1
+CircuitBuildTimeBin 3175 1
+CircuitBuildTimeBin 3275 1
+CircuitBuildTimeBin 3575 1
+CircuitBuildTimeBin 3725 1
+CircuitBuildTimeBin 3775 1
+CircuitBuildTimeBin 3925 1
+CircuitBuildTimeBin 4025 1
+CircuitBuildTimeBin 4125 1
+CircuitBuildTimeBin 4175 1
+CircuitBuildTimeBin 4525 1
+CircuitBuildTimeBin 5725 1
+CircuitBuildTimeBin 6225 1
