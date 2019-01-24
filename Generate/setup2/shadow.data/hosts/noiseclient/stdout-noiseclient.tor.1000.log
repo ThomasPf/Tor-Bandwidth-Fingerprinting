@@ -1,0 +1,152 @@
+Jan 01 00:15:00.000 [notice] Tor 0.3.2.10 (git-31cc63deb69db819) running on Linux with Libevent 2.0.21-stable, OpenSSL 1.0.1e, Zlib 1.2.11, Liblzma 5.2.4, and Libzstd N/A.
+Jan 01 00:15:00.000 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
+Jan 01 00:15:00.000 [notice] Read configuration file "/home/acsjakub/Career/School/CS4160Blockchain/external/Tor-Bandwidth-Fingerprinting/Generate/setup2/conf/tor.common.torrc".
+Jan 01 00:15:00.000 [notice] Read configuration file "/home/acsjakub/Career/School/CS4160Blockchain/external/Tor-Bandwidth-Fingerprinting/Generate/setup2/conf/tor.client.torrc".
+Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'AllowInvalidNodes'
+Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'WarnUnsafeSocks'
+Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'DynamicDHGroups'
+Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'SocksListenAddress'
+Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'AllowInvalidNodes'
+Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'WarnUnsafeSocks'
+Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'DynamicDHGroups'
+Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'SocksListenAddress'
+Jan 01 00:15:00.000 [warn] Path for DataDirectory (shadow.data/hosts/noiseclient) is relative and will resolve to /home/acsjakub/Career/School/CS4160Blockchain/external/Tor-Bandwidth-Fingerprinting/Generate/setup2/shadow.data/hosts/noiseclient. Is this what you wanted?
+Jan 01 00:15:00.000 [warn] ControlPort is open, but no authentication method has been configured.  This means that any program on your computer can reconfigure your Tor.  That's bad!  You should upgrade your Tor controller as soon as possible.
+Jan 01 00:15:00.000 [warn] You have used DirAuthority or AlternateDirAuthority to specify alternate directory authorities in your configuration. This is potentially dangerous: it can make you look different from all other Tor users, and hurt your anonymity. Even if you've specified the same authorities as Tor uses by default, the defaults could change in the future. Be sure you know what you're doing.
+Jan 01 00:15:00.000 [warn] TestingTorNetwork is set. This will make your node almost unusable in the public Tor network, and is therefore only advised if you are building a testing Tor network!
+Jan 01 00:15:00.000 [notice] Scheduler type KIST has been enabled.
+Jan 01 00:15:00.000 [notice] Opening Socks listener on 127.0.0.1:9000
+Jan 01 00:15:00.000 [notice] Opening Control listener on 127.0.0.1:9051
+Jan 01 00:15:00.000 [warn] Fixing permissions on directory shadow.data/hosts/noiseclient
+Jan 01 00:15:00.000 [warn] Your log may contain sensitive information - you disabled SafeLogging. Don't log unless it serves an important reason. Overwrite the log afterwards.
+Jan 01 00:15:00.000 [notice] Not disabling debugger attaching for unprivileged users.
+Jan 01 00:15:00.000 [notice] Parsing GEOIP IPv4 file /home/acsjakub/.shadow/share/geoip.
+Jan 01 00:15:00.000 [notice] Bootstrapped 0%: Starting
+Jan 01 00:15:00.000 [notice] Starting with guard context "default"
+Jan 01 00:15:01.000 [notice] Bootstrapped 5%: Connecting to directory server
+Jan 01 00:15:01.000 [notice] Bootstrapped 10%: Finishing handshake with directory server
+Jan 01 00:15:01.000 [notice] Bootstrapped 15%: Establishing an encrypted directory connection
+Jan 01 00:15:01.000 [notice] Bootstrapped 20%: Asking for networkstatus consensus
+Jan 01 00:15:01.000 [notice] Bootstrapped 25%: Loading networkstatus consensus
+Jan 01 00:15:01.000 [notice] I learned some more directory information, but not enough to build a circuit: We have no usable consensus.
+Jan 01 00:15:01.000 [notice] Bootstrapped 40%: Loading authority key certs
+Jan 01 00:15:01.000 [notice] Bootstrapped 45%: Asking for relay descriptors
+Jan 01 00:15:01.000 [notice] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 0/6, and can only build 0% of likely paths. (We have 0% of guards bw, 0% of midpoint bw, and 0% of exit bw = 0% of path bw.)
+Jan 01 00:15:02.000 [notice] Bootstrapped 50%: Loading relay descriptors
+Jan 01 00:15:02.000 [notice] Bootstrapped 80%: Connecting to the Tor network
+Jan 01 00:15:03.000 [warn] You specified a relay "relayexit1" by name, but nicknames can be used by any relay, not just the one you meant. To make sure you get the same relay in the future, refer to it by key, as "$2BC9A49ED4B506110D9F31F243CF23E45AA1D599".
+Jan 01 00:15:03.000 [warn] You specified a relay "relayexitguard1" by name, but nicknames can be used by any relay, not just the one you meant. To make sure you get the same relay in the future, refer to it by key, as "$5EE72D8CCC4DD74A4795C7CA9752BD0CBD3E49BC".
+Jan 01 00:15:03.000 [warn] You specified a relay "relaymiddle1" by name, but nicknames can be used by any relay, not just the one you meant. To make sure you get the same relay in the future, refer to it by key, as "$E873DA14E01711ABB1E5B74C8114E0A0198A894A".
+Jan 01 00:15:03.000 [notice] Bootstrapped 85%: Finishing handshake with first hop
+Jan 01 00:15:03.000 [notice] Bootstrapped 90%: Establishing a Tor circuit
+Jan 01 00:15:04.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6107c70 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:04.000 [notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+Jan 01 00:15:04.000 [notice] Bootstrapped 100%: Done
+Jan 01 00:15:04.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6153f70 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:05.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6127a70 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:06.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x49a6730 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:07.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x616f1d0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:18.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x20c9a00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:29.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x46f6c30 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:40.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x2013350 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:51.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4927fc0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:02.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x479ab80 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:13.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x49366c0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:24.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x497a660 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:34.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4a82930 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:35.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6167ac0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:36.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4987cb0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:47.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x471b550 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:58.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x48f98c0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:17:09.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x48c5e70 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:17:20.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x20fd780 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:17:31.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x49d1850 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:17:36.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4a65760 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:17:37.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6127c20 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:17:38.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6100990 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:17:49.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x47fbfd0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:18:00.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x1f99bf0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:18:11.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4a5b000 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:18:22.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x33a3330 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:18:33.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4aaff90 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:18:38.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4a82930 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:18:39.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x49d1850 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:18:40.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x60e09d0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:18:51.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x2057fa0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:19:02.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4b0da40 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:19:13.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x49199e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:19:24.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6126540 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:19:35.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x20dd490 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:19:40.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x47768a0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:19:41.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x60e9410 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:19:52.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x479ab80 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:20:04.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x497e9a0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:20:13.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x67d0590 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:20:24.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6157a70 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:20:35.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x66e4110 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:20:44.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4a2da90 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:20:45.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4a91810 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:20:56.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6e81e00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:21:06.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7046410 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:21:15.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x61151c0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:21:27.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4716180 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:21:37.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x66faa00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:21:47.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x47768a0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:21:48.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7862fd0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:21:58.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x73d1de0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:22:08.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4b5f400 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:22:16.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6469be0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:22:27.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7ea30e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:22:39.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7ec2cc0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:22:48.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x48c03e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:22:49.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x71e9e20 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:23:00.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x61d47d0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:23:11.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x62cbac0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:23:20.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4838790 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:23:30.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x33f8140 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:23:40.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7d82130 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:23:50.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x78a7860 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:23:51.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6aa8990 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:24:01.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x9973bd0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:24:12.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7802c10 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:24:21.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6469be0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:24:32.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7daea00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:24:43.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x3341c80 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:24:54.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x87bc330 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:24:55.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6f53910 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:25:04.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x95e8a50 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:25:15.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7902450 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:25:22.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x75364f0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:25:34.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x83fb440 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:25:45.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa0c8780 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:25:54.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x80870f0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:25:55.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x8b0dc40 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:26:07.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa39f590 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:26:17.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x84fe430 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:26:25.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x96a5020 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:26:36.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7799260 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:26:46.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x88effd0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:26:56.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa4373f0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:26:57.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x686cf00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:27:08.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x95b5e00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:27:21.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x9de68a0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:27:27.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x94b89a0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:27:37.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7aaabb0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:27:49.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x86c4e40 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:27:58.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x8a6ba20 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:27:59.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x948cdf0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:28:10.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7f9aa80 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:28:23.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x9693840 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:28:29.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x97a6400 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:28:40.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xb784320 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:28:50.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7eddd40 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:28:59.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa4373f0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:29:00.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x9cc79a0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:29:31.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x96a8230 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:30:01.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x8a6ba20 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:30:02.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa4d46f0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:30:03.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x60b7f30 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:30:05.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7eddd40 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:31:01.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x8683c80 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:41:35.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x61a9f90 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:52:07.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6928490 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)

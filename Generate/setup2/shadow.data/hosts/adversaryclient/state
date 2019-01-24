@@ -1,0 +1,53 @@
+# Tor state file last generated on 2000-01-01 00:50:30 local time
+# Other times below are in UTC
+# You *do not* need to edit this file.
+
+Guard in=default rsa_id=5EE72D8CCC4DD74A4795C7CA9752BD0CBD3E49BC nickname=relayexitguard1 sampled_on=1999-12-24T20:15:33 sampled_by=0.3.2.10 listed=1 confirmed_on=1999-12-24T06:25:51 confirmed_idx=0 pb_use_attempts=4.000000 pb_use_successes=4.000000 pb_circ_attempts=107.000000 pb_circ_successes=107.000000 pb_successful_circuits_closed=107.000000
+Guard in=default rsa_id=63F4465D2C7ADA3BB6ECA219BCDCEE48BCD08A9F nickname=4uthority1 sampled_on=1999-12-29T23:50:05 sampled_by=0.3.2.10 listed=1
+TorVersion Tor 0.3.2.10 (git-31cc63deb69db819)
+LastWritten 2000-01-01 00:50:30
+TotalBuildTimes 107
+CircuitBuildTimeBin 525 5
+CircuitBuildTimeBin 575 2
+CircuitBuildTimeBin 625 22
+CircuitBuildTimeBin 675 1
+CircuitBuildTimeBin 725 7
+CircuitBuildTimeBin 775 1
+CircuitBuildTimeBin 825 1
+CircuitBuildTimeBin 875 1
+CircuitBuildTimeBin 975 1
+CircuitBuildTimeBin 1175 1
+CircuitBuildTimeBin 1225 1
+CircuitBuildTimeBin 1275 2
+CircuitBuildTimeBin 1375 1
+CircuitBuildTimeBin 1425 1
+CircuitBuildTimeBin 1475 2
+CircuitBuildTimeBin 1575 1
+CircuitBuildTimeBin 1625 3
+CircuitBuildTimeBin 1725 4
+CircuitBuildTimeBin 1825 1
+CircuitBuildTimeBin 1875 2
+CircuitBuildTimeBin 1925 2
+CircuitBuildTimeBin 2025 3
+CircuitBuildTimeBin 2075 5
+CircuitBuildTimeBin 2125 5
+CircuitBuildTimeBin 2175 1
+CircuitBuildTimeBin 2325 2
+CircuitBuildTimeBin 2375 2
+CircuitBuildTimeBin 2425 1
+CircuitBuildTimeBin 2525 2
+CircuitBuildTimeBin 2575 1
+CircuitBuildTimeBin 2625 1
+CircuitBuildTimeBin 2675 2
+CircuitBuildTimeBin 2725 2
+CircuitBuildTimeBin 2775 2
+CircuitBuildTimeBin 2825 2
+CircuitBuildTimeBin 2875 3
+CircuitBuildTimeBin 2975 3
+CircuitBuildTimeBin 3175 1
+CircuitBuildTimeBin 3225 2
+CircuitBuildTimeBin 3525 1
+CircuitBuildTimeBin 4025 1
+CircuitBuildTimeBin 4225 1
+CircuitBuildTimeBin 4325 1
+CircuitBuildTimeBin 4625 1
