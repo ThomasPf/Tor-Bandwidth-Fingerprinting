@@ -1,4 +1,4 @@
-import re
+import re, getopt, sys
 from os import listdir
 from os import path as pt
 from os.path import isfile, join, isdir
@@ -105,5 +105,35 @@ def get_dfs_from_path(onlyfiles: list):
         dataframes.append(pd.read_csv(mypath + file))
 
 
+def main(argv):
+    window_size = 200
+    global mypath
+    global base_path
+    try:
+        opts, args = getopt.getopt(argv, "hw:p:", ["path=", "window="])
+        print(opts)
+        print(args)
+    except getopt.GetoptError:
+        print('stats.py -p <path> -w <windowsize>')
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt == '-h':
+            print('stats.py -p <path> -w <windowsize>')
+            sys.exit()
+        elif opt in ("-p", "--path"):
+            mypath = arg
+            base_path = arg
+        elif opt in ("-w", "--window"):
+            window_size = int(arg)
+
+        print('using path: '+base_path)
+        print('using window_size: '+str(window_size))
+
+        get_files_from_path_multiple_dir(window_size)
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
+
 # get_files_from_my_path(200)
-get_files_from_path_multiple_dir(500)
+#get_files_from_path_multiple_dir(500)
