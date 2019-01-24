@@ -126,10 +126,10 @@ def main(argv):
         elif opt in ("-w", "--window"):
             window_size = int(arg)
 
-        print('using path: '+base_path)
-        print('using window_size: '+str(window_size))
+    print('using path: '+base_path)
+    print('using window_size: '+str(window_size))
 
-        get_files_from_path_multiple_dir(window_size)
+    get_files_from_path_multiple_dir(window_size)
 
 
 if __name__ == "__main__":
