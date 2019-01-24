@@ -135,7 +135,7 @@ def main(argv):
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print('stats.py -p <path> -w <windowsize>')
+            print('stats.py -p <path> -w <windowsize> -c <cherry-picked-test>')
             sys.exit()
         elif opt in ("-p", "--path"):
             mypath = arg
