@@ -189,6 +189,9 @@ def main():
     ap.add_argument('--nservers', action="store", type=int, dest="nservers", help="number N of fileservers", metavar='N', default=NSERVERS)
     ap.add_argument('--geoippath', action="store", dest="geoippath", help="path to geoip file, needed to convert IPs to cluster codes", default=INSTALLPREFIX+"share/geoip")
 
+    ap.add_argument('--custom-relay-selection', action="store", type=int, help="Enable custom relay selection", default="conf/paths.txt")
+    ap.add_argument('--custom-relay-selection-path', action="store", help="Filepath for the custom relay selection file", default="conf/paths.txt")
+
     # positional args (required)
     ap.add_argument('alexa', action="store", type=str, help="path to an ALEXA file (produced with contrib/parsealexa.py)", metavar='ALEXA', default=None)
     ap.add_argument('consensus', action="store", type=str, help="path to a current Tor CONSENSUS file", metavar='CONSENSUS', default=None)
@@ -1114,6 +1117,11 @@ CircuitPriorityHalflife 30\n\
 PathBiasUseThreshold 10000\n\
 PathBiasCircThreshold 10000\n\
 ControlPort 9051\n'.format(auths_lines, auth_name_csv)
+
+    if args.custom-relay-selection is not None:
+        common += "TestingPredefinedCircuitsFile" + args.custom-relay-selection-path
+        log("custom-relay-selection enabled, added TestingPredefinedCircuitsFile to common torrc file")
+
     clients = \
 'ORPort 0\n\
 DirPort 0\n\
@@ -1122,15 +1130,22 @@ SocksPort 9000\n\
 SocksListenAddress 127.0.0.1\n\
 BandwidthRate 5120000\n\
 BandwidthBurst 10240000\n'
+
     torbrowser = '{}MaxCircuitDirtiness 30 seconds\n'.format(clients)
+
     bridgeclients = bridges_lines
+
     relays = \
 'ORPort 9111\n\
 SocksPort 0\n' # note - also need exit policy
+
     bridges = \
 'BridgeRelay 1\n'
+
     guard_flag_str = ",".join([g.replace(" ", "") for g in guardids])
+
     exit_flag_str = ",".join([e.replace(" ", "") for e in exitids])
+
     authorities = \
 'AuthoritativeDirectory 1\n\
 V3AuthoritativeDirectory 1\n\
@@ -1142,12 +1157,14 @@ TestingDirAuthVoteGuard {0}\n\
 TestingDirAuthVoteGuardIsStrict 1\n\
 TestingDirAuthVoteExit {1}\n\
 TestingDirAuthVoteExitIsStrict 1\n'.format(guard_flag_str, exit_flag_str)
+
     bridgeauths = \
 'AuthoritativeDirectory 1\n\
 BridgeAuthoritativeDir 1\n\
 ORPort 9111\n\
 DirPort 9112\n\
 SocksPort 0\n' # note - also need exit policy
+
     dirserv = \
 'DirPort 9112\n'
     epreject = 'ExitPolicy "reject *:*"\n'
