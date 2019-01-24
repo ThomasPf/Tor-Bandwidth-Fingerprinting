@@ -135,5 +135,5 @@ def main(argv):
 if __name__ == "__main__":
     main(sys.argv[1:])
 
-# get_files_from_my_path(200)
+# get_files_from_my_path(200)pi
 #get_files_from_path_multiple_dir(500)
