@@ -13,7 +13,7 @@ onlyfiles_len: int = 0
 debug: bool = False
 directories = []
 multi_run: bool = False
-cherry_picked: int = 0
+cherry_picked: int = -1
 
 
 # start with this method if you want to give your own path
@@ -26,7 +26,7 @@ def get_files_from_path_multiple_dir(window_size: int):
     for test in setups:
         mypath = base_path + test + '/'
         print(test)
-        if cherry_picked != 0:
+        if cherry_picked > -1:
             if test == 'setup'+str(cherry_picked):
                 get_files_from_my_path(window_size, optional=test)
                 break
