@@ -7,8 +7,8 @@ from os.path import isfile, join, isdir
 import matplotlib.pyplot as plt
 import pandas as pd
 
-mypath: str = "/Users/Pfann/Desktop/Computer_science/Tor-Bandwidth-Fingerprinting/extracted/"
-base_path: str = "/Users/Pfann/Desktop/Computer_science/Tor-Bandwidth-Fingerprinting/extracted/"
+mypath: str = ""
+base_path: str = ""
 dataframes = []
 onlyfiles_len: int = 0
 debug: bool = False
