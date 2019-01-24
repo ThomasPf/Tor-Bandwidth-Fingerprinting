@@ -1,0 +1,3 @@
+Scenario 4
+	multiple noise client with 4 MiB download attempt with 30 seconds pauses, starting at different times
+	with emphasis on the middle relay having significantly lower bandwidth than edge relays
