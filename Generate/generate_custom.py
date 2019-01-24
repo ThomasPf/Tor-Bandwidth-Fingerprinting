@@ -191,6 +191,7 @@ def main():
 
     ap.add_argument('--custom-relay-selection', action="store", type=int, help="Enable custom relay selection", default="conf/paths.txt")
     ap.add_argument('--custom-relay-selection-path', action="store", help="Filepath for the custom relay selection file", default="conf/paths.txt")
+    ap.add_argument('--tor-log-level', action="store", help="Tor log level: err, warn, notice, info, debug", default="info")
 
     # positional args (required)
     ap.add_argument('alexa', action="store", type=str, help="path to an ALEXA file (produced with contrib/parsealexa.py)", metavar='ALEXA', default=None)
@@ -1102,7 +1103,6 @@ ServerDNSTestAddresses {1}\n\
 ServerDNSAllowBrokenConfig 1\n\
 ServerDNSDetectHijacking 0\n\
 NumCPUs 1\n\
-Log notice stdout\n\
 SafeLogging 0\n\
 WarnUnsafeSocks 0\n\
 ContactInfo shadow-support@cs.umn.edu\n\
@@ -1118,8 +1118,10 @@ PathBiasUseThreshold 10000\n\
 PathBiasCircThreshold 10000\n\
 ControlPort 9051\n'.format(auths_lines, auth_name_csv)
 
+    common += "Log " + args.tor-log-level + " stdout\n"
+
     if args.custom-relay-selection is not None:
-        common += "TestingPredefinedCircuitsFile" + args.custom-relay-selection-path
+        common += "TestingPredefinedCircuitsFile" + args.custom-relay-selection-path + "\n"
         log("custom-relay-selection enabled, added TestingPredefinedCircuitsFile to common torrc file")
 
     clients = \
