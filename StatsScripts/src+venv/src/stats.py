@@ -122,12 +122,9 @@ def main(argv):
     global base_path
     global cherry_picked
     path = getcwd()
-    print(path)
-    path = path[:path.find('StatsScripts/')]
-    print(path)
-    base_path = path+"extracted/"
-    mypath = path+"extracted/"
-
+    path = path[:path.find('Tor-Bandwidth-Fingerprinting/')]
+    base_path = path+"Tor-Bandwidth-Fingerprinting/extracted/"
+    mypath = path+"Tor-Bandwidth-Fingerprinting/extracted/"
     try:
         opts, args = getopt.getopt(argv, "hw:p:c:", ["window=", "path=", "cherry="])
     except getopt.GetoptError:
