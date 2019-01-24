@@ -1,4 +1,4 @@
-Python 3.7.2
+Python          3.7.2
 
 cycler	        0.10.0	0.10.0
 kiwisolver	    1.0.1	1.0.1

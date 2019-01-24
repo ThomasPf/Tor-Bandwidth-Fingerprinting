@@ -13,6 +13,7 @@ onlyfiles_len: int = 0
 debug: bool = False
 directories = []
 multi_run: bool = False
+cherry_picked: int = 0
 
 
 # start with this method if you want to give your own path
@@ -23,15 +24,24 @@ def get_files_from_path_multiple_dir(window_size: int):
     regex = re.compile(".*(setup).*")
     setups = [m.group(0) for l in all_dirs_path for m in [regex.search(l)] if m]
     for test in setups:
-        mypath = base_path+test+'/'
-        print('my_path: '+mypath)
-        get_files_from_my_path(window_size, optional=test)
+        mypath = base_path + test + '/'
+        print(test)
+        if cherry_picked != 0:
+            if test == 'setup'+str(cherry_picked):
+                get_files_from_my_path(window_size, optional=test)
+                break
+            else:
+                print('no such setup: setup'+str(cherry_picked))
+                exit(3)
+        else:
+            mypath = base_path+test+'/'
+            print('my_path: '+mypath)
+            get_files_from_my_path(window_size, optional=test)
 
 
 # Default start method
 def get_files_from_my_path(window_size: int, **args):
     test_name = 'standard_test'
-    print(args)
     if len(args) == 1:
         if 'optional' in args:
             print('test name: ', args['optional'])
@@ -109,12 +119,11 @@ def main(argv):
     window_size = 200
     global mypath
     global base_path
+    global cherry_picked
     try:
-        opts, args = getopt.getopt(argv, "hw:p:", ["path=", "window="])
-        print(opts)
-        print(args)
+        opts, args = getopt.getopt(argv, "hw:p:c:", ["window=", "path=", "cherry="])
     except getopt.GetoptError:
-        print('stats.py -p <path> -w <windowsize>')
+        print('stats.py -p <path> -w <windowsize> -c <cherry-picked-test>')
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
@@ -125,6 +134,8 @@ def main(argv):
             base_path = arg
         elif opt in ("-w", "--window"):
             window_size = int(arg)
+        elif opt in ("-c", "--cherry"):
+            cherry_picked = int(arg)
 
     print('using path: '+base_path)
     print('using window_size: '+str(window_size))
