@@ -1,38 +1,42 @@
-# Tor state file last generated on 2000-01-01 00:58:52 local time
+# Tor state file last generated on 2000-01-01 00:58:21 local time
 # Other times below are in UTC
 # You *do not* need to edit this file.
 
 BWHistoryReadEnds 2000-01-02 00:01:00
 BWHistoryReadInterval 86400
-BWHistoryReadValues 997248000
-BWHistoryReadMaxima 672768
+BWHistoryReadValues 990900224
+BWHistoryReadMaxima 669696
 BWHistoryWriteEnds 2000-01-02 00:01:00
 BWHistoryWriteInterval 86400
-BWHistoryWriteValues 997466112
-BWHistoryWriteMaxima 669696
+BWHistoryWriteValues 991771648
+BWHistoryWriteMaxima 673792
 BWHistoryDirReadEnds 2000-01-02 00:01:00
 BWHistoryDirReadInterval 86400
-BWHistoryDirReadValues 8192
+BWHistoryDirReadValues 17408
 BWHistoryDirReadMaxima 0
 BWHistoryDirWriteEnds 2000-01-02 00:01:00
 BWHistoryDirWriteInterval 86400
-BWHistoryDirWriteValues 26624
-BWHistoryDirWriteMaxima 0
-Guard in=default rsa_id=63F4465D2C7ADA3BB6ECA219BCDCEE48BCD08A9F nickname=4uthority1 sampled_on=1999-12-23T13:37:39 sampled_by=0.3.2.10 listed=1 confirmed_on=1999-12-22T06:37:45 confirmed_idx=0 pb_circ_attempts=155.000000 pb_circ_successes=155.000000 pb_successful_circuits_closed=155.000000
+BWHistoryDirWriteValues 58368
+BWHistoryDirWriteMaxima 1024
+Guard in=default rsa_id=63F4465D2C7ADA3BB6ECA219BCDCEE48BCD08A9F nickname=4uthority1 sampled_on=1999-12-23T13:37:39 sampled_by=0.3.2.10 listed=1 confirmed_on=1999-12-21T21:03:42 confirmed_idx=0 pb_circ_attempts=155.000000 pb_circ_successes=155.000000 pb_successful_circuits_closed=155.000000
 TorVersion Tor 0.3.2.10 (git-31cc63deb69db819)
 LastRotatedOnionKey 2000-01-01 00:01:00
-LastWritten 2000-01-01 00:58:52
+LastWritten 2000-01-01 00:58:21
 TotalBuildTimes 160
-CircuitBuildTimeBin 525 18
-CircuitBuildTimeBin 575 24
-CircuitBuildTimeBin 625 76
-CircuitBuildTimeBin 675 2
-CircuitBuildTimeBin 725 22
-CircuitBuildTimeBin 775 1
-CircuitBuildTimeBin 825 5
+CircuitBuildTimeBin 425 1
+CircuitBuildTimeBin 475 1
+CircuitBuildTimeBin 525 46
+CircuitBuildTimeBin 575 40
+CircuitBuildTimeBin 625 42
+CircuitBuildTimeBin 675 1
+CircuitBuildTimeBin 725 13
+CircuitBuildTimeBin 775 5
+CircuitBuildTimeBin 825 1
 CircuitBuildTimeBin 875 2
-CircuitBuildTimeBin 925 6
-CircuitBuildTimeBin 975 1
-CircuitBuildTimeBin 1125 1
-CircuitBuildTimeBin 1375 1
-CircuitBuildTimeBin 1775 1
+CircuitBuildTimeBin 975 2
+CircuitBuildTimeBin 1575 1
+CircuitBuildTimeBin 1625 1
+CircuitBuildTimeBin 1725 1
+CircuitBuildTimeBin 4125 1
+CircuitBuildTimeBin 4325 1
+CircuitBuildTimeBin 5475 1
