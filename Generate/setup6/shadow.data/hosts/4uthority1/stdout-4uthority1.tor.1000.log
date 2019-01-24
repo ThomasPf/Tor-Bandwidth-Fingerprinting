@@ -1,15 +1,15 @@
-Jan 01 00:00:05.000 [notice] Tor 0.3.2.10 (git-31cc63deb69db819) running on Linux with Libevent 2.0.21-stable, OpenSSL 1.0.1e, Zlib 1.2.11, Liblzma 5.2.4, and Libzstd N/A.
+Jan 01 00:00:05.000 [notice] Tor 0.3.2.10 (git-31cc63deb69db819) running on Linux with Libevent 2.0.21-stable, OpenSSL 1.0.1e, Zlib 1.2.8, Liblzma 5.1.0alpha, and Libzstd N/A.
 Jan 01 00:00:05.000 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
-Jan 01 00:00:05.000 [notice] Read configuration file "/home/acsjakub/Career/School/CS4160Blockchain/external/Tor-Bandwidth-Fingerprinting/Generate/setup4/conf/tor.common.torrc".
-Jan 01 00:00:05.000 [notice] Read configuration file "/home/acsjakub/Career/School/CS4160Blockchain/external/Tor-Bandwidth-Fingerprinting/Generate/setup4/conf/tor.authority.torrc".
+Jan 01 00:00:05.000 [notice] Read configuration file "/mnt/c/Users/test/Repos/Tor-Bandwidth-Fingerprinting/Generate/setup6/conf/tor.common.torrc".
+Jan 01 00:00:05.000 [notice] Read configuration file "/mnt/c/Users/test/Repos/Tor-Bandwidth-Fingerprinting/Generate/setup6/conf/tor.authority.torrc".
 Jan 01 00:00:05.000 [warn] Skipping obsolete configuration option 'AllowInvalidNodes'
 Jan 01 00:00:05.000 [warn] Skipping obsolete configuration option 'WarnUnsafeSocks'
 Jan 01 00:00:05.000 [warn] Skipping obsolete configuration option 'DynamicDHGroups'
 Jan 01 00:00:05.000 [warn] Skipping obsolete configuration option 'AllowInvalidNodes'
 Jan 01 00:00:05.000 [warn] Skipping obsolete configuration option 'WarnUnsafeSocks'
 Jan 01 00:00:05.000 [warn] Skipping obsolete configuration option 'DynamicDHGroups'
-Jan 01 00:00:05.000 [warn] Path for V3BandwidthsFile (shadow.data/hosts/torflowauthority/v3bw) is relative and will resolve to /home/acsjakub/Career/School/CS4160Blockchain/external/Tor-Bandwidth-Fingerprinting/Generate/setup4/shadow.data/hosts/torflowauthority/v3bw. Is this what you wanted?
-Jan 01 00:00:05.000 [warn] Path for DataDirectory (shadow.data/hosts/4uthority1) is relative and will resolve to /home/acsjakub/Career/School/CS4160Blockchain/external/Tor-Bandwidth-Fingerprinting/Generate/setup4/shadow.data/hosts/4uthority1. Is this what you wanted?
+Jan 01 00:00:05.000 [warn] Path for V3BandwidthsFile (shadow.data/hosts/torflowauthority/v3bw) is relative and will resolve to /mnt/c/Users/test/Repos/Tor-Bandwidth-Fingerprinting/Generate/setup6/shadow.data/hosts/torflowauthority/v3bw. Is this what you wanted?
+Jan 01 00:00:05.000 [warn] Path for DataDirectory (shadow.data/hosts/4uthority1) is relative and will resolve to /mnt/c/Users/test/Repos/Tor-Bandwidth-Fingerprinting/Generate/setup6/shadow.data/hosts/4uthority1. Is this what you wanted?
 Jan 01 00:00:05.000 [notice] Based on detected system memory, MaxMemInQueues is set to 8192 MB. You can override this by setting MaxMemInQueues by hand.
 Jan 01 00:00:05.000 [warn] ControlPort is open, but no authentication method has been configured.  This means that any program on your computer can reconfigure your Tor.  That's bad!  You should upgrade your Tor controller as soon as possible.
 Jan 01 00:00:05.000 [warn] You have used DirAuthority or AlternateDirAuthority to specify alternate directory authorities in your configuration. This is potentially dangerous: it can make you look different from all other Tor users, and hurt your anonymity. Even if you've specified the same authorities as Tor uses by default, the defaults could change in the future. Be sure you know what you're doing.
@@ -21,10 +21,13 @@ Jan 01 00:00:05.000 [notice] Opening Directory listener on 0.0.0.0:9112
 Jan 01 00:00:05.000 [warn] Fixing permissions on directory shadow.data/hosts/4uthority1
 Jan 01 00:00:05.000 [warn] Your log may contain sensitive information - you disabled SafeLogging. Don't log unless it serves an important reason. Overwrite the log afterwards.
 Jan 01 00:00:05.000 [notice] Not disabling debugger attaching for unprivileged users.
+Jan 01 00:00:05.000 [warn] Fixing permissions on directory shadow.data/hosts/4uthority1
+Jan 01 00:00:05.000 [warn] Fixing permissions on directory shadow.data/hosts/4uthority1/keys
+Jan 01 00:00:05.000 [warn] Fixing permissions on directory shadow.data/hosts/4uthority1
 Jan 01 00:00:05.000 [warn] Fixing permissions on directory shadow.data/hosts/4uthority1/keys
 Jan 01 00:00:05.000 [notice] Your Tor server's identity key fingerprint is '4uthority1 63F4465D2C7ADA3BB6ECA219BCDCEE48BCD08A9F'
 Jan 01 00:00:05.000 [warn] Cannot open fingerprint file 'shadow.data/hosts/4uthority1/approved-routers'. That's ok.
-Jan 01 00:00:05.000 [notice] Parsing GEOIP IPv4 file /home/acsjakub/.shadow/share/geoip.
+Jan 01 00:00:05.000 [notice] Parsing GEOIP IPv4 file /home/misa/.shadow/share/geoip.
 Jan 01 00:00:05.000 [notice] Configured to measure statistics. Look for the *-stats files that will first be written to the data directory in 24 hours from now.
 Jan 01 00:00:05.000 [notice] Bootstrapped 0%: Starting
 Jan 01 00:00:05.000 [notice] Starting with guard context "default"
@@ -355,14 +358,72 @@ Jan 01 00:04:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight
 Jan 01 00:04:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
 Jan 01 00:04:41.000 [notice] Consensus computed; uploading signature(s)
 Jan 01 00:04:41.000 [notice] Signature(s) posted.
+Jan 01 00:04:45.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:45.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:45.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:45.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:45.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:45.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:45.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:45.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
 Jan 01 00:04:45.000 [notice] Bootstrapped 90%: Establishing a Tor circuit
 Jan 01 00:04:45.000 [notice] Tor has successfully opened a circuit. Looks like client functionality is working.
 Jan 01 00:04:45.000 [notice] Bootstrapped 100%: Done
+Jan 01 00:04:46.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:46.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:46.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:46.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:46.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:46.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:46.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:46.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:47.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:47.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:47.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:47.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:47.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:47.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:48.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:48.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:48.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:48.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:48.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:48.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:49.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:49.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:49.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:49.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:04:49.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:04:49.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
 Jan 01 00:04:51.000 [notice] Time to fetch any signatures that we're missing.
 Jan 01 00:05:01.000 [notice] Time to publish the consensus and discard old votes
 Jan 01 00:05:01.000 [notice] Published ns consensus
 Jan 01 00:05:01.000 [notice] Published microdesc consensus
+Jan 01 00:05:06.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:05:06.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:05:06.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:05:06.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
 Jan 01 00:05:06.000 [notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
+Jan 01 00:05:06.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:05:06.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:05:06.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:05:06.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:05:07.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:05:07.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:05:07.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:05:07.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:05:07.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:05:07.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:05:07.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:05:07.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:05:07.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:05:07.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:05:07.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:05:07.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:05:08.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:05:08.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:05:08.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:05:08.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
 Jan 01 00:05:08.000 [notice] Performing bandwidth self-test...done.
 Jan 01 00:05:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
 Jan 01 00:06:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
@@ -567,11 +628,65 @@ Jan 01 00:55:01.000 [notice] Published microdesc consensus
 Jan 01 00:55:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
 Jan 01 00:56:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
 Jan 01 00:57:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:57:58.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:57:58.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:57:58.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:57:58.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:57:58.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:57:58.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:57:59.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:57:59.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:57:59.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:57:59.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:57:59.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:57:59.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:58:29.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:58:29.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:58:29.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:58:29.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:58:29.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:58:29.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:58:30.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:58:30.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:58:30.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:58:30.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:58:30.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:58:30.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
 Jan 01 00:58:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:59:00.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:00.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:59:00.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:00.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:59:00.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:00.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:59:01.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:01.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:59:01.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:01.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:59:01.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:01.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
 Jan 01 00:59:21.000 [notice] Time to vote.
 Jan 01 00:59:21.000 [notice] Choosing valid-after time in vote as 2000-01-01 01:00:00: consensus_set=1, last_interval=300
 Jan 01 00:59:21.000 [notice] Vote posted.
 Jan 01 00:59:31.000 [notice] Time to fetch any votes that we're missing.
+Jan 01 00:59:31.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:31.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:59:31.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:31.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:59:31.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:31.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:59:32.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:32.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:59:32.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:32.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:59:32.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:32.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:59:33.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:33.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:59:33.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:33.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
+Jan 01 00:59:33.000 [warn] GET_RELAY_NICKNAME For 4uthority1
+Jan 01 00:59:33.000 [warn] GET_RELAY_NICKNAME For: 4uthority1, Result: (null)
 Jan 01 00:59:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
 Jan 01 00:59:41.000 [notice] Time to compute a consensus.
 Jan 01 00:59:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4

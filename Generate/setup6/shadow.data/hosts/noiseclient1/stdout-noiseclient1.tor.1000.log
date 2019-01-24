@@ -1,7 +1,7 @@
-Jan 01 00:15:00.000 [notice] Tor 0.3.2.10 (git-31cc63deb69db819) running on Linux with Libevent 2.0.21-stable, OpenSSL 1.0.1e, Zlib 1.2.11, Liblzma 5.2.4, and Libzstd N/A.
+Jan 01 00:15:00.000 [notice] Tor 0.3.2.10 (git-31cc63deb69db819) running on Linux with Libevent 2.0.21-stable, OpenSSL 1.0.1e, Zlib 1.2.8, Liblzma 5.1.0alpha, and Libzstd N/A.
 Jan 01 00:15:00.000 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
-Jan 01 00:15:00.000 [notice] Read configuration file "/home/acsjakub/Career/School/CS4160Blockchain/external/Tor-Bandwidth-Fingerprinting/Generate/setup4/conf/tor.common.torrc".
-Jan 01 00:15:00.000 [notice] Read configuration file "/home/acsjakub/Career/School/CS4160Blockchain/external/Tor-Bandwidth-Fingerprinting/Generate/setup4/conf/tor.client.torrc".
+Jan 01 00:15:00.000 [notice] Read configuration file "/mnt/c/Users/test/Repos/Tor-Bandwidth-Fingerprinting/Generate/setup6/conf/tor.common.torrc".
+Jan 01 00:15:00.000 [notice] Read configuration file "/mnt/c/Users/test/Repos/Tor-Bandwidth-Fingerprinting/Generate/setup6/conf/tor.client.torrc".
 Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'AllowInvalidNodes'
 Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'WarnUnsafeSocks'
 Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'DynamicDHGroups'
@@ -10,7 +10,7 @@ Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'AllowInvalidN
 Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'WarnUnsafeSocks'
 Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'DynamicDHGroups'
 Jan 01 00:15:00.000 [warn] Skipping obsolete configuration option 'SocksListenAddress'
-Jan 01 00:15:00.000 [warn] Path for DataDirectory (shadow.data/hosts/noiseclient1) is relative and will resolve to /home/acsjakub/Career/School/CS4160Blockchain/external/Tor-Bandwidth-Fingerprinting/Generate/setup4/shadow.data/hosts/noiseclient1. Is this what you wanted?
+Jan 01 00:15:00.000 [warn] Path for DataDirectory (shadow.data/hosts/noiseclient1) is relative and will resolve to /mnt/c/Users/test/Repos/Tor-Bandwidth-Fingerprinting/Generate/setup6/shadow.data/hosts/noiseclient1. Is this what you wanted?
 Jan 01 00:15:00.000 [warn] ControlPort is open, but no authentication method has been configured.  This means that any program on your computer can reconfigure your Tor.  That's bad!  You should upgrade your Tor controller as soon as possible.
 Jan 01 00:15:00.000 [warn] You have used DirAuthority or AlternateDirAuthority to specify alternate directory authorities in your configuration. This is potentially dangerous: it can make you look different from all other Tor users, and hurt your anonymity. Even if you've specified the same authorities as Tor uses by default, the defaults could change in the future. Be sure you know what you're doing.
 Jan 01 00:15:00.000 [warn] TestingTorNetwork is set. This will make your node almost unusable in the public Tor network, and is therefore only advised if you are building a testing Tor network!
@@ -20,7 +20,7 @@ Jan 01 00:15:00.000 [notice] Opening Control listener on 127.0.0.1:9051
 Jan 01 00:15:00.000 [warn] Fixing permissions on directory shadow.data/hosts/noiseclient1
 Jan 01 00:15:00.000 [warn] Your log may contain sensitive information - you disabled SafeLogging. Don't log unless it serves an important reason. Overwrite the log afterwards.
 Jan 01 00:15:00.000 [notice] Not disabling debugger attaching for unprivileged users.
-Jan 01 00:15:00.000 [notice] Parsing GEOIP IPv4 file /home/acsjakub/.shadow/share/geoip.
+Jan 01 00:15:00.000 [notice] Parsing GEOIP IPv4 file /home/misa/.shadow/share/geoip.
 Jan 01 00:15:00.000 [notice] Bootstrapped 0%: Starting
 Jan 01 00:15:00.000 [notice] Starting with guard context "default"
 Jan 01 00:15:01.000 [notice] Bootstrapped 5%: Connecting to directory server
@@ -34,118 +34,790 @@ Jan 01 00:15:01.000 [notice] Bootstrapped 45%: Asking for relay descriptors
 Jan 01 00:15:01.000 [notice] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 0/6, and can only build 0% of likely paths. (We have 0% of guards bw, 0% of midpoint bw, and 0% of exit bw = 0% of path bw.)
 Jan 01 00:15:02.000 [notice] Bootstrapped 50%: Loading relay descriptors
 Jan 01 00:15:02.000 [notice] Bootstrapped 80%: Connecting to the Tor network
+Jan 01 00:15:03.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:03.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
 Jan 01 00:15:03.000 [warn] You specified a relay "relayexit1" by name, but nicknames can be used by any relay, not just the one you meant. To make sure you get the same relay in the future, refer to it by key, as "$2BC9A49ED4B506110D9F31F243CF23E45AA1D599".
+Jan 01 00:15:03.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:03.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
 Jan 01 00:15:03.000 [warn] You specified a relay "relayexitguard1" by name, but nicknames can be used by any relay, not just the one you meant. To make sure you get the same relay in the future, refer to it by key, as "$5EE72D8CCC4DD74A4795C7CA9752BD0CBD3E49BC".
+Jan 01 00:15:03.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:03.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
 Jan 01 00:15:03.000 [warn] You specified a relay "relaymiddle1" by name, but nicknames can be used by any relay, not just the one you meant. To make sure you get the same relay in the future, refer to it by key, as "$E873DA14E01711ABB1E5B74C8114E0A0198A894A".
 Jan 01 00:15:03.000 [notice] Bootstrapped 85%: Finishing handshake with first hop
 Jan 01 00:15:03.000 [notice] Bootstrapped 90%: Establishing a Tor circuit
-Jan 01 00:15:04.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6b422d0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:04.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:04.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:15:04.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:04.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:15:04.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:04.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:15:04.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x2845200 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
 Jan 01 00:15:04.000 [notice] Tor has successfully opened a circuit. Looks like client functionality is working.
 Jan 01 00:15:04.000 [notice] Bootstrapped 100%: Done
-Jan 01 00:15:04.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6b7e320 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:15:05.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6b5bca0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:15:06.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6b94590 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:15:07.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6babc80 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:15:18.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x1ae2a80 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:15:29.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x1a5a7d0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:15:40.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x445ad90 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:15:51.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x40f2670 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:16:02.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x41c51e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:16:13.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x41f02a0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:16:24.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4481050 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:16:34.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6b45990 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:16:35.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x1ad97b0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:16:36.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x44df650 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:16:47.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x1a5a7d0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:16:58.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6bfe4e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:17:09.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x42e3900 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:17:20.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x460dff0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:17:31.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x42297b0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:17:36.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x127e140 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:17:37.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x41d44b0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:17:38.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6a7e5e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:17:49.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x3007760 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:18:00.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x452e1b0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:18:11.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6b4e7a0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:18:22.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4299df0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:18:33.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6bff320 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:18:38.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6c08b10 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:18:39.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6af2790 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:18:50.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4633e90 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:19:01.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x4619b50 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:19:09.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x42bf4c0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:19:20.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x2fdd760 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:19:31.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6ae1c90 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:19:40.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6bc5bc0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:19:41.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x1a18af0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:19:52.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x41bfd70 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:20:04.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x3020a50 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:20:13.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x446b9d0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:20:23.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6bcc640 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:20:35.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x71bb820 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:20:44.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x42ada30 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:20:46.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x79ee240 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:20:57.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6bb3b80 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:21:06.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7aaa680 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:21:16.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x1b31800 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:21:27.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x80660e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:21:37.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x853f8b0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:21:48.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6c218b0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:21:48.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x84654c0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:21:59.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7a489c0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:22:08.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x460dff0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:22:16.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x88a3a20 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:22:28.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7e8ceb0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:22:39.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x8c109f0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:22:47.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x74462e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:22:49.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6f85640 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:23:00.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x78a1140 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:23:10.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6bccfa0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:23:19.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x8227770 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:23:30.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x78c32c0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:23:41.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7c32e00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:23:50.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6adcc30 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:23:51.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x44fb3e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:24:01.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6fdc660 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:24:12.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x9cf3f60 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:24:21.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x88a3a20 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:24:32.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x8b14450 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:24:43.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x8c9b360 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:24:52.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x74462e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:24:53.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7bb8de0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:25:02.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x8f88e20 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:25:15.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x919b3f0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:25:22.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6d73ca0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:25:33.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x8fa8240 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:25:45.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7ae5f80 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:25:56.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7569d00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:25:58.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xad7d380 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:26:05.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7fc0d40 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:26:17.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xb26fdd0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:26:24.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x88a3a20 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:26:36.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa4d69e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:26:47.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa0e3620 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:26:57.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x936fad0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:26:57.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x90d0510 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:27:09.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa28aa50 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:27:20.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7d04a40 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:27:29.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x446b9d0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:27:37.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xb26ecc0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:27:50.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x8dbfc70 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:27:58.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7569d00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:27:59.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xbc31730 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:28:12.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6fa3a00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:28:21.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xb053790 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:28:29.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x88a3a20 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:28:39.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa66eec0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:28:51.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x8dc9e50 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:29:01.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa5334e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:29:01.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x9510360 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:29:34.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x7b17200 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:30:02.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x6c38050 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:30:02.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xb176340 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:30:03.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa66eec0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:30:04.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x1a2c1a0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:31:46.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xac5d1a0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:42:47.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x857b610 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
-Jan 01 00:53:05.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x89d4ff0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:04.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x5338800 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:05.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:05.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:15:05.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:05.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:15:05.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:05.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:15:05.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa0104f0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:06.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:06.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:15:06.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:06.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:15:06.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:06.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:15:06.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x9ffff90 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:07.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:07.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:15:07.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:07.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:15:07.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:07.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:15:07.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa060900 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:18.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:18.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:15:18.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:18.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:15:18.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:18.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:15:18.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x53801f0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:29.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:29.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:15:29.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:29.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:15:29.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:29.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:15:29.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x2874730 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:40.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:40.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:15:40.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:40.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:15:40.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:40.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:15:40.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x3d18800 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:15:51.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:51.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:15:51.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:51.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:15:51.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:15:51.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:15:51.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x52f4c00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:02.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:02.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:16:02.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:02.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:16:02.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:02.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:16:02.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x2896c70 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:13.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:13.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:16:13.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:13.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:16:13.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:13.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:16:13.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x50a9cc0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:24.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:24.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:16:24.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:24.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:16:24.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:24.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:16:24.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x5390890 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:34.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:34.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:16:34.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:34.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:16:34.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:34.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:16:34.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x5116bb0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:35.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:35.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:16:35.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:35.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:16:35.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:35.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:16:35.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa05dad0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:36.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:36.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:16:36.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:36.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:16:36.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:36.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:16:36.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x5195430 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:47.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:47.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:16:47.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:47.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:16:47.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:47.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:16:47.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa0a1b10 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:16:58.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:58.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:16:58.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:58.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:16:58.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:16:58.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:16:58.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa0666e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:17:09.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:09.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:17:09.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:09.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:17:09.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:09.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:17:09.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x50bcc00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:17:20.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:20.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:17:20.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:20.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:17:20.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:20.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:17:20.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x29fdd60 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:17:31.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:31.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:17:31.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:31.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:17:31.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:31.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:17:31.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x3ce6940 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:17:36.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:36.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:17:36.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:36.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:17:36.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:36.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:17:36.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x538b4a0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:17:37.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:37.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:17:37.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:37.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:17:37.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:37.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:17:37.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa05ca60 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:17:48.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:48.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:17:48.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:48.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:17:48.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:48.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:17:48.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x2929800 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:17:59.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:59.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:17:59.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:59.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:17:59.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:17:59.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:17:59.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x537f0a0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:18:07.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:07.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:18:07.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:07.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:18:07.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:07.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:18:07.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x517d3d0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:18:18.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:18.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:18:18.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:18.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:18:18.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:18.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:18:18.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x52e9690 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:18:29.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:29.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:18:29.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:29.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:18:29.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:29.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:18:29.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x51e0640 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:18:38.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:38.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:18:38.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:38.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:18:38.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:38.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:18:38.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa068e70 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:18:39.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:39.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:18:39.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:39.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:18:39.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:39.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:18:39.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x9e55ab0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:18:50.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:50.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:18:50.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:50.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:18:50.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:18:50.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:18:50.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x51d8400 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:19:01.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:01.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:19:01.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:01.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:19:01.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:01.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:19:01.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x521e270 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:19:09.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:09.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:19:09.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:09.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:19:09.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:09.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:19:09.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa039570 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:19:20.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:20.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:19:20.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:20.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:19:20.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:20.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:19:20.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x9f33410 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:19:31.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:31.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:19:31.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:31.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:19:31.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:31.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:19:31.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x513a030 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:19:40.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:40.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:19:40.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:40.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:19:40.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:40.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:19:40.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa154df0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:19:41.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:41.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:19:41.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:41.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:19:41.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:41.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:19:41.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x20a7200 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:19:52.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:52.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:19:52.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:52.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:19:52.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:19:52.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:19:52.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa01bf80 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:20:03.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:03.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:20:03.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:03.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:20:03.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:03.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:20:04.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x9fb6c60 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:20:11.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:11.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:20:11.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:11.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:20:11.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:11.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:20:12.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x2a25730 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:20:22.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:22.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:20:22.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:22.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:20:22.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:22.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:20:24.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa9cce90 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:20:33.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:33.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:20:33.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:33.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:20:33.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:33.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:20:39.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xbbf3750 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:20:42.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:42.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:20:42.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:42.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:20:42.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:42.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:20:43.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:43.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:20:43.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:43.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:20:43.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:43.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:20:48.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa0ba3d0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:20:50.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x52fca00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:20:54.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:54.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:20:54.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:54.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:20:54.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:20:54.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:21:05.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:05.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:21:05.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:05.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:21:05.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:05.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:21:06.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa0a1b10 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:21:13.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:13.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:21:13.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:13.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:21:13.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:13.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:21:16.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xae71700 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:21:22.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa5af760 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:21:24.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:24.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:21:24.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:24.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:21:24.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:24.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:21:28.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xbc7d140 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:21:35.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:35.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:21:35.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:35.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:21:35.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:35.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:21:39.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xbbf1530 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:21:44.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:44.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:21:44.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:44.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:21:44.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:44.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:21:45.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:45.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:21:45.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:45.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:21:45.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:45.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:21:53.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x9e6b9f0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:21:54.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xb02ecf0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:21:56.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:56.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:21:56.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:56.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:21:56.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:21:56.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:22:04.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xbdc4a40 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:22:07.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:07.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:22:07.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:07.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:22:07.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:07.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:22:15.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:15.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:22:15.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:15.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:22:15.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:15.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:22:16.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xc2f1b60 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:22:24.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa80a520 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:22:26.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:26.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:22:26.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:26.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:22:26.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:26.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:22:32.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xaf0d8e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:22:37.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:37.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:22:37.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:37.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:22:37.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:37.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:22:40.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xafdeb40 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:22:46.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:46.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:22:46.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:46.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:22:46.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:46.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:22:47.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:47.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:22:47.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:47.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:22:47.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:47.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:22:49.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xb548e00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:22:49.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xb668330 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:22:58.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:58.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:22:58.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:58.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:22:58.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:22:58.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:23:01.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xc2f0a40 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:23:09.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:09.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:23:09.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:09.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:23:09.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:09.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:23:16.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xb0b4e90 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:23:17.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:17.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:23:17.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:17.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:23:17.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:17.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:23:25.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xc143820 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:23:28.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:28.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:23:28.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:28.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:23:28.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:28.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:23:35.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xc36ea60 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:23:39.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:39.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:23:39.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:39.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:23:39.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:39.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:23:48.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:48.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:23:48.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:48.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:23:48.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:48.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:23:49.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:49.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:23:49.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:49.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:23:49.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:23:49.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:23:50.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xc15b390 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:23:58.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa6adfd0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:23:59.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xd9d9da0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:24:00.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:00.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:24:00.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:00.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:24:00.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:00.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:24:08.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xb4b8430 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:24:11.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:11.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:24:11.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:11.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:24:11.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:11.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:24:16.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xb436d00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:24:19.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:19.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:24:19.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:19.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:24:19.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:19.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:24:26.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xd065d60 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:24:30.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:30.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:24:30.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:30.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:24:30.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:30.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:24:39.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xd3bab00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:24:41.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:41.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:24:41.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:41.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:24:41.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:41.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:24:47.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xcfb2d90 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:24:50.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:50.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:24:50.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:50.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:24:50.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:50.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:24:51.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:51.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:24:51.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:51.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:24:51.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:24:51.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:24:56.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xbab95e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:24:57.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xb6f1be0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:25:10.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:10.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:25:10.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:10.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:25:10.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:10.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:25:15.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xc07ee20 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:25:21.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:21.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:25:21.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:21.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:25:21.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:21.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:25:24.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xd092fc0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:25:32.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:32.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:25:32.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:32.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:25:32.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:32.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:25:37.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xe0fe5e0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:25:43.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:43.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:25:43.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:43.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:25:43.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:43.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:25:50.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xd124c80 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:25:52.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:52.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:25:52.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:52.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:25:52.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:52.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:25:53.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:53.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:25:53.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:53.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:25:53.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:25:53.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:26:02.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xc07e090 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:26:03.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xc61bde0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:26:04.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:04.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:26:04.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:04.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:26:04.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:04.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:26:12.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xbb0f140 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:26:15.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:15.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:26:15.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:15.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:26:15.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:15.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:26:23.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:23.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:26:23.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:23.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:26:23.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:23.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:26:23.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xb0bafe0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:26:31.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xc2d2f40 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:26:34.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:34.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:26:34.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:34.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:26:34.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:34.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:26:42.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xaa0f7f0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:26:45.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:45.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:26:45.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:45.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:26:45.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:45.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:26:51.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xb9fe650 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:26:54.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:54.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:26:54.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:54.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:26:54.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:54.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:26:55.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:55.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:26:55.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:55.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:26:55.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:26:55.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:26:59.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xd3bab00 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:27:00.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xd094590 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:27:06.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:06.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:27:06.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:06.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:27:06.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:06.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:27:12.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xc1f4bf0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:27:17.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:17.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:27:17.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:17.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:27:17.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:17.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:27:25.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:25.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:27:25.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:25.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:27:25.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:25.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:27:26.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xe33a800 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:27:33.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xe99b680 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:27:36.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:36.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:27:36.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:36.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:27:36.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:36.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:27:41.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xd82f630 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:27:47.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:47.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:27:47.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:47.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:27:47.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:47.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:27:52.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa9a0fc0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:27:56.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:56.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:27:56.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:56.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:27:56.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:56.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:27:57.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:57.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:27:57.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:57.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:27:57.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:27:57.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:28:02.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xd632a40 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:28:03.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xc400d70 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:28:08.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:08.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:28:08.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:08.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:28:08.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:08.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:28:18.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xe350f40 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:28:19.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:19.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:28:19.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:19.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:28:19.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:19.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:28:27.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:27.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:28:27.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:27.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:28:27.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:27.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:28:27.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xc83e980 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:28:35.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xe10bda0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:28:38.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:38.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:28:38.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:38.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:28:38.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:38.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:28:46.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xc1407f0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:28:49.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:49.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:28:49.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:49.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:28:49.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:49.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:28:56.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xdfdc170 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:28:58.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:58.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:28:58.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:58.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:28:58.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:58.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:28:59.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:59.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:28:59.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:59.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:28:59.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:28:59.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:29:06.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xdaed950 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:29:06.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa91e810 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:29:10.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:29:10.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:29:10.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:29:10.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:29:10.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:29:10.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:29:16.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xe988030 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:29:21.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:29:21.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:29:21.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:29:21.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:29:21.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:29:21.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:29:28.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xf3f4630 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:29:29.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:29:29.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:29:29.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:29:29.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:29:29.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:29:29.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:29:37.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:29:37.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:29:37.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:29:37.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:29:37.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:29:37.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:29:44.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x10872ab0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:30:00.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:00.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:30:00.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:00.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:30:00.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:00.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:30:01.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:01.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:30:01.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:01.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:30:01.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:01.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:30:07.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x10eb3700 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:30:08.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xc5ab060 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:30:31.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:31.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:30:31.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:31.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:30:31.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:31.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:30:32.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:32.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:30:32.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:32.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:30:32.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:32.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:30:35.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xa157420 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:30:35.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xe988030 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:30:47.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:47.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:30:47.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:47.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:30:47.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:47.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:30:55.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:55.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:30:55.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:55.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:30:55.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:30:55.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:31:03.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:31:03.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:31:03.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:31:03.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:31:03.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:31:03.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:31:12.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:31:12.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:31:12.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:31:12.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:31:12.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:31:12.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:31:18.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xeac61c0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:41:08.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:41:08.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:41:08.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:41:08.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:41:08.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:41:08.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:41:12.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0x10877ad0 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)
+Jan 01 00:51:50.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:51:50.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexit1
+Jan 01 00:51:50.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:51:50.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relayexitguard1
+Jan 01 00:51:50.000 [warn] GET_RELAY_NICKNAME For noiseclient1
+Jan 01 00:51:50.000 [warn] GET_RELAY_NICKNAME For: noiseclient1, Result: relaymiddle1
+Jan 01 00:51:52.000 [warn] circuit_build_no_more_hops(): Bug: 3-hop circuit 0xd7dee20 with purpose 5 has no guard state (on Tor 0.3.2.10 31cc63deb69db819)

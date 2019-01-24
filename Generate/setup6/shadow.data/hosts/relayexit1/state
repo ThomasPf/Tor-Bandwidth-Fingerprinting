@@ -1,15 +1,15 @@
-# Tor state file last generated on 2000-01-01 00:59:37 local time
+# Tor state file last generated on 2000-01-01 00:59:41 local time
 # Other times below are in UTC
 # You *do not* need to edit this file.
 
 BWHistoryReadEnds 2000-01-02 00:04:20
 BWHistoryReadInterval 86400
-BWHistoryReadValues 976087040
-BWHistoryReadMaxima 658432
+BWHistoryReadValues 979616768
+BWHistoryReadMaxima 655360
 BWHistoryWriteEnds 2000-01-02 00:04:20
 BWHistoryWriteInterval 86400
-BWHistoryWriteValues 985008128
-BWHistoryWriteMaxima 663552
+BWHistoryWriteValues 988701696
+BWHistoryWriteMaxima 662528
 BWHistoryDirReadEnds 2000-01-02 00:04:20
 BWHistoryDirReadInterval 86400
 BWHistoryDirReadValues 0
@@ -18,24 +18,25 @@ BWHistoryDirWriteEnds 2000-01-02 00:04:20
 BWHistoryDirWriteInterval 86400
 BWHistoryDirWriteValues 0
 BWHistoryDirWriteMaxima 0
-Guard in=default rsa_id=5EE72D8CCC4DD74A4795C7CA9752BD0CBD3E49BC nickname=relayexitguard1 sampled_on=1999-12-26T01:27:45 sampled_by=0.3.2.10 listed=1 confirmed_on=1999-12-20T18:23:03 confirmed_idx=1 pb_circ_attempts=8.000000 pb_circ_successes=8.000000 pb_successful_circuits_closed=8.000000
-Guard in=default rsa_id=63F4465D2C7ADA3BB6ECA219BCDCEE48BCD08A9F nickname=4uthority1 sampled_on=1999-12-30T11:25:21 sampled_by=0.3.2.10 listed=1 confirmed_on=1999-12-24T20:52:25 confirmed_idx=0 pb_circ_attempts=93.000000 pb_circ_successes=93.000000 pb_successful_circuits_closed=93.000000
+Guard in=default rsa_id=5EE72D8CCC4DD74A4795C7CA9752BD0CBD3E49BC nickname=relayexitguard1 sampled_on=1999-12-26T01:27:45 sampled_by=0.3.2.10 listed=1 confirmed_on=1999-12-30T15:26:43 confirmed_idx=1 pb_circ_attempts=11.000000 pb_circ_successes=11.000000 pb_successful_circuits_closed=11.000000
+Guard in=default rsa_id=63F4465D2C7ADA3BB6ECA219BCDCEE48BCD08A9F nickname=4uthority1 sampled_on=1999-12-30T11:25:21 sampled_by=0.3.2.10 listed=1 confirmed_on=1999-12-20T16:57:07 confirmed_idx=0 pb_circ_attempts=94.000000 pb_circ_successes=94.000000 pb_successful_circuits_closed=94.000000
 TorVersion Tor 0.3.2.10 (git-31cc63deb69db819)
 LastRotatedOnionKey 2000-01-01 00:04:20
-LastWritten 2000-01-01 00:59:37
-TotalBuildTimes 106
-CircuitBuildTimeBin 375 5
-CircuitBuildTimeBin 425 3
-CircuitBuildTimeBin 475 4
-CircuitBuildTimeBin 525 43
-CircuitBuildTimeBin 575 14
-CircuitBuildTimeBin 625 21
-CircuitBuildTimeBin 675 3
-CircuitBuildTimeBin 725 4
-CircuitBuildTimeBin 775 3
-CircuitBuildTimeBin 1025 1
-CircuitBuildTimeBin 1175 1
-CircuitBuildTimeBin 1225 1
-CircuitBuildTimeBin 1625 1
-CircuitBuildTimeBin 1725 1
-CircuitBuildTimeBin 1775 1
+LastWritten 2000-01-01 00:59:41
+TotalBuildTimes 110
+CircuitBuildTimeBin 325 1
+CircuitBuildTimeBin 375 8
+CircuitBuildTimeBin 425 1
+CircuitBuildTimeBin 475 1
+CircuitBuildTimeBin 525 58
+CircuitBuildTimeBin 575 13
+CircuitBuildTimeBin 625 9
+CircuitBuildTimeBin 675 1
+CircuitBuildTimeBin 725 5
+CircuitBuildTimeBin 775 4
+CircuitBuildTimeBin 875 2
+CircuitBuildTimeBin 925 2
+CircuitBuildTimeBin 1075 2
+CircuitBuildTimeBin 2425 1
+CircuitBuildTimeBin 4725 1
+CircuitBuildTimeBin 5275 1
