@@ -1,0 +1,583 @@
+Jan 01 00:00:05.000 [notice] Tor 0.3.2.10 (git-31cc63deb69db819) running on Linux with Libevent 2.0.21-stable, OpenSSL 1.0.1e, Zlib 1.2.11, Liblzma 5.2.4, and Libzstd N/A.
+Jan 01 00:00:05.000 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
+Jan 01 00:00:05.000 [notice] Read configuration file "/home/acsjakub/Career/School/CS4160Blockchain/external/Tor-Bandwidth-Fingerprinting/Generate/setup2/conf/tor.common.torrc".
+Jan 01 00:00:05.000 [notice] Read configuration file "/home/acsjakub/Career/School/CS4160Blockchain/external/Tor-Bandwidth-Fingerprinting/Generate/setup2/conf/tor.authority.torrc".
+Jan 01 00:00:05.000 [warn] Skipping obsolete configuration option 'AllowInvalidNodes'
+Jan 01 00:00:05.000 [warn] Skipping obsolete configuration option 'WarnUnsafeSocks'
+Jan 01 00:00:05.000 [warn] Skipping obsolete configuration option 'DynamicDHGroups'
+Jan 01 00:00:05.000 [warn] Skipping obsolete configuration option 'AllowInvalidNodes'
+Jan 01 00:00:05.000 [warn] Skipping obsolete configuration option 'WarnUnsafeSocks'
+Jan 01 00:00:05.000 [warn] Skipping obsolete configuration option 'DynamicDHGroups'
+Jan 01 00:00:05.000 [warn] Path for V3BandwidthsFile (shadow.data/hosts/torflowauthority/v3bw) is relative and will resolve to /home/acsjakub/Career/School/CS4160Blockchain/external/Tor-Bandwidth-Fingerprinting/Generate/setup2/shadow.data/hosts/torflowauthority/v3bw. Is this what you wanted?
+Jan 01 00:00:05.000 [warn] Path for DataDirectory (shadow.data/hosts/4uthority1) is relative and will resolve to /home/acsjakub/Career/School/CS4160Blockchain/external/Tor-Bandwidth-Fingerprinting/Generate/setup2/shadow.data/hosts/4uthority1. Is this what you wanted?
+Jan 01 00:00:05.000 [notice] Based on detected system memory, MaxMemInQueues is set to 8192 MB. You can override this by setting MaxMemInQueues by hand.
+Jan 01 00:00:05.000 [warn] ControlPort is open, but no authentication method has been configured.  This means that any program on your computer can reconfigure your Tor.  That's bad!  You should upgrade your Tor controller as soon as possible.
+Jan 01 00:00:05.000 [warn] You have used DirAuthority or AlternateDirAuthority to specify alternate directory authorities in your configuration. This is potentially dangerous: it can make you look different from all other Tor users, and hurt your anonymity. Even if you've specified the same authorities as Tor uses by default, the defaults could change in the future. Be sure you know what you're doing.
+Jan 01 00:00:05.000 [warn] TestingTorNetwork is set. This will make your node almost unusable in the public Tor network, and is therefore only advised if you are building a testing Tor network!
+Jan 01 00:00:05.000 [notice] Scheduler type KIST has been enabled.
+Jan 01 00:00:05.000 [notice] Opening Control listener on 127.0.0.1:9051
+Jan 01 00:00:05.000 [notice] Opening OR listener on 0.0.0.0:9111
+Jan 01 00:00:05.000 [notice] Opening Directory listener on 0.0.0.0:9112
+Jan 01 00:00:05.000 [warn] Fixing permissions on directory shadow.data/hosts/4uthority1
+Jan 01 00:00:05.000 [warn] Your log may contain sensitive information - you disabled SafeLogging. Don't log unless it serves an important reason. Overwrite the log afterwards.
+Jan 01 00:00:05.000 [notice] Not disabling debugger attaching for unprivileged users.
+Jan 01 00:00:05.000 [warn] Fixing permissions on directory shadow.data/hosts/4uthority1/keys
+Jan 01 00:00:05.000 [notice] Your Tor server's identity key fingerprint is '4uthority1 63F4465D2C7ADA3BB6ECA219BCDCEE48BCD08A9F'
+Jan 01 00:00:05.000 [warn] Cannot open fingerprint file 'shadow.data/hosts/4uthority1/approved-routers'. That's ok.
+Jan 01 00:00:05.000 [notice] Parsing GEOIP IPv4 file /home/acsjakub/.shadow/share/geoip.
+Jan 01 00:00:05.000 [notice] Configured to measure statistics. Look for the *-stats files that will first be written to the data directory in 24 hours from now.
+Jan 01 00:00:05.000 [notice] Bootstrapped 0%: Starting
+Jan 01 00:00:05.000 [notice] Starting with guard context "default"
+Jan 01 00:00:05.000 [warn] Could not open "shadow.data/hosts/4uthority1/sr-state": No such file or directory
+Jan 01 00:00:05.000 [warn] SR: Unable to read SR state file "shadow.data/hosts/4uthority1/sr-state"
+Jan 01 00:00:06.000 [notice] Scheduling voting.  Known authority IDs are 4440496A959904E3BB6101AC0886DD79E3AC6CAB. Mine is 4440496A959904E3BB6101AC0886DD79E3AC6CAB.
+Jan 01 00:00:06.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:06.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:06.000 [notice] New control connection opened from 127.0.0.1.
+Jan 01 00:00:06.000 [warn] The "EXTENDED" SETEVENTS argument is no longer supported.
+Jan 01 00:00:07.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:07.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:08.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:08.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:09.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:09.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:10.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:10.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:11.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:11.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:12.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:12.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:13.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:13.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:14.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:14.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:15.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:15.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:16.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:16.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:17.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:17.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:18.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:18.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:19.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:19.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:20.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:20.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:21.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:21.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:22.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:22.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:23.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:23.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:24.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:24.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:25.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:25.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:26.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:26.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:27.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:27.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:28.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:28.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:29.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:29.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:30.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:30.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:31.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:31.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:32.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:32.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:33.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:33.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:34.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:34.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:35.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:35.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:37.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:37.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:38.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:38.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:39.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:39.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:40.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:40.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:41.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:41.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:42.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:42.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:43.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:43.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:44.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:44.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:45.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:45.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:46.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:46.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:47.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:47.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:48.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:48.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:49.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:49.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:50.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:50.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:51.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:51.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:52.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:52.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:53.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:53.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:54.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:54.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:55.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:55.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:56.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:56.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:57.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:57.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:58.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:58.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:59.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:00:59.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:00.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:00.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:01.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:01.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:01.000 [notice] Bootstrapped 10%: Finishing handshake with directory server
+Jan 01 00:01:02.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:02.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:03.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:03.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:04.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:04.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:05.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:05.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:06.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:06.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:07.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:07.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:08.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:08.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:09.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:09.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:10.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:10.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:11.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:11.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:12.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:12.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:13.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:13.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:14.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:14.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:15.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:15.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:16.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:16.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:17.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:17.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:18.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:18.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:19.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:19.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:20.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:20.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:21.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:21.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:22.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:22.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:23.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:23.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:24.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:24.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:25.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:25.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:26.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:26.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:27.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:27.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:28.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:28.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:29.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:29.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:30.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:30.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:31.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:31.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:32.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:32.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:33.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:33.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:34.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:34.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:35.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:35.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:37.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:37.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:38.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:38.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:39.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:39.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:40.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:40.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:41.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:41.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:42.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:42.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:43.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:43.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:44.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:44.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:45.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:45.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:46.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:46.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:47.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:47.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:48.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:48.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:49.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:49.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:50.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:50.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:51.000 [notice] Time to vote.
+Jan 01 00:01:51.000 [notice] Choosing valid-after time in vote as 2000-01-01 00:02:30: consensus_set=0, last_interval=150
+Jan 01 00:01:51.000 [notice] Vote posted.
+Jan 01 00:01:51.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:51.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:52.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:52.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:53.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:53.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:54.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:54.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:55.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:55.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:56.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:56.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:57.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:57.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:58.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:58.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:59.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:01:59.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:00.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:00.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:01.000 [notice] Time to fetch any votes that we're missing.
+Jan 01 00:02:01.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:01.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:02.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:02.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:03.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:03.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:04.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:04.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:05.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:05.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:06.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:06.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:07.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:07.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:08.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:08.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:09.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:09.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:10.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:10.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:11.000 [notice] Time to compute a consensus.
+Jan 01 00:02:11.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:02:11.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:02:11.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:02:11.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:02:11.000 [notice] Consensus computed; uploading signature(s)
+Jan 01 00:02:11.000 [notice] Signature(s) posted.
+Jan 01 00:02:11.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:11.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:12.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:12.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:13.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:13.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:14.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:14.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:15.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:15.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:16.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:16.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:17.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:17.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:18.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:18.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:19.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:19.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:20.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:20.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:21.000 [notice] Time to fetch any signatures that we're missing.
+Jan 01 00:02:21.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:21.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:22.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:22.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:23.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:23.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:24.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:24.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:25.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:25.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:26.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:26.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:27.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:27.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:28.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:28.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:29.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:29.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:30.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:30.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 14)
+Jan 01 00:02:31.000 [notice] Time to publish the consensus and discard old votes
+Jan 01 00:02:31.000 [notice] Published ns consensus
+Jan 01 00:02:31.000 [notice] Published microdesc consensus
+Jan 01 00:02:31.000 [notice] Bootstrapped 80%: Connecting to the Tor network
+Jan 01 00:02:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:03:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:04:21.000 [notice] Time to vote.
+Jan 01 00:04:21.000 [notice] Choosing valid-after time in vote as 2000-01-01 00:05:00: consensus_set=1, last_interval=300
+Jan 01 00:04:21.000 [notice] Vote posted.
+Jan 01 00:04:21.000 [notice] Bootstrapped 85%: Finishing handshake with first hop
+Jan 01 00:04:31.000 [notice] Time to fetch any votes that we're missing.
+Jan 01 00:04:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:04:41.000 [notice] Time to compute a consensus.
+Jan 01 00:04:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:04:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:04:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:04:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:04:41.000 [notice] Consensus computed; uploading signature(s)
+Jan 01 00:04:41.000 [notice] Signature(s) posted.
+Jan 01 00:04:45.000 [notice] Bootstrapped 90%: Establishing a Tor circuit
+Jan 01 00:04:45.000 [notice] Tor has successfully opened a circuit. Looks like client functionality is working.
+Jan 01 00:04:45.000 [notice] Bootstrapped 100%: Done
+Jan 01 00:04:51.000 [notice] Time to fetch any signatures that we're missing.
+Jan 01 00:05:01.000 [notice] Time to publish the consensus and discard old votes
+Jan 01 00:05:01.000 [notice] Published ns consensus
+Jan 01 00:05:01.000 [notice] Published microdesc consensus
+Jan 01 00:05:06.000 [notice] Self-testing indicates your ORPort is reachable from the outside. Excellent. Publishing server descriptor.
+Jan 01 00:05:08.000 [notice] Performing bandwidth self-test...done.
+Jan 01 00:05:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:06:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:07:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:08:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:09:21.000 [notice] Time to vote.
+Jan 01 00:09:21.000 [notice] Choosing valid-after time in vote as 2000-01-01 00:10:00: consensus_set=1, last_interval=300
+Jan 01 00:09:21.000 [notice] Vote posted.
+Jan 01 00:09:31.000 [notice] Time to fetch any votes that we're missing.
+Jan 01 00:09:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:09:41.000 [notice] Time to compute a consensus.
+Jan 01 00:09:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:09:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:09:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:09:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:09:41.000 [notice] Consensus computed; uploading signature(s)
+Jan 01 00:09:41.000 [notice] Signature(s) posted.
+Jan 01 00:09:51.000 [notice] Time to fetch any signatures that we're missing.
+Jan 01 00:10:01.000 [notice] Time to publish the consensus and discard old votes
+Jan 01 00:10:01.000 [notice] Published ns consensus
+Jan 01 00:10:01.000 [notice] Published microdesc consensus
+Jan 01 00:10:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:11:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:12:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:13:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:14:21.000 [notice] Time to vote.
+Jan 01 00:14:21.000 [notice] Choosing valid-after time in vote as 2000-01-01 00:15:00: consensus_set=1, last_interval=300
+Jan 01 00:14:21.000 [notice] Vote posted.
+Jan 01 00:14:31.000 [notice] Time to fetch any votes that we're missing.
+Jan 01 00:14:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:14:41.000 [notice] Time to compute a consensus.
+Jan 01 00:14:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:14:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:14:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:14:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:14:41.000 [notice] Consensus computed; uploading signature(s)
+Jan 01 00:14:41.000 [notice] Signature(s) posted.
+Jan 01 00:14:51.000 [notice] Time to fetch any signatures that we're missing.
+Jan 01 00:15:01.000 [notice] Time to publish the consensus and discard old votes
+Jan 01 00:15:01.000 [notice] Published ns consensus
+Jan 01 00:15:01.000 [notice] Published microdesc consensus
+Jan 01 00:15:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:16:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:17:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:18:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:19:21.000 [notice] Time to vote.
+Jan 01 00:19:21.000 [notice] Choosing valid-after time in vote as 2000-01-01 00:20:00: consensus_set=1, last_interval=300
+Jan 01 00:19:21.000 [notice] Vote posted.
+Jan 01 00:19:31.000 [notice] Time to fetch any votes that we're missing.
+Jan 01 00:19:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:19:41.000 [notice] Time to compute a consensus.
+Jan 01 00:19:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:19:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:19:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:19:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:19:41.000 [notice] Consensus computed; uploading signature(s)
+Jan 01 00:19:41.000 [notice] Signature(s) posted.
+Jan 01 00:19:51.000 [notice] Time to fetch any signatures that we're missing.
+Jan 01 00:20:01.000 [notice] Time to publish the consensus and discard old votes
+Jan 01 00:20:01.000 [notice] Published ns consensus
+Jan 01 00:20:01.000 [notice] Published microdesc consensus
+Jan 01 00:20:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:21:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:22:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:23:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:24:21.000 [notice] Time to vote.
+Jan 01 00:24:21.000 [notice] Choosing valid-after time in vote as 2000-01-01 00:25:00: consensus_set=1, last_interval=300
+Jan 01 00:24:21.000 [notice] Vote posted.
+Jan 01 00:24:31.000 [notice] Time to fetch any votes that we're missing.
+Jan 01 00:24:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:24:41.000 [notice] Time to compute a consensus.
+Jan 01 00:24:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:24:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:24:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:24:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:24:41.000 [notice] Consensus computed; uploading signature(s)
+Jan 01 00:24:41.000 [notice] Signature(s) posted.
+Jan 01 00:24:51.000 [notice] Time to fetch any signatures that we're missing.
+Jan 01 00:25:01.000 [notice] Time to publish the consensus and discard old votes
+Jan 01 00:25:01.000 [notice] Published ns consensus
+Jan 01 00:25:01.000 [notice] Published microdesc consensus
+Jan 01 00:25:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:26:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:27:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:28:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:29:21.000 [notice] Time to vote.
+Jan 01 00:29:21.000 [notice] Choosing valid-after time in vote as 2000-01-01 00:30:00: consensus_set=1, last_interval=300
+Jan 01 00:29:21.000 [notice] Vote posted.
+Jan 01 00:29:31.000 [notice] Time to fetch any votes that we're missing.
+Jan 01 00:29:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:29:41.000 [notice] Time to compute a consensus.
+Jan 01 00:29:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:29:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:29:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:29:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:29:41.000 [notice] Consensus computed; uploading signature(s)
+Jan 01 00:29:41.000 [notice] Signature(s) posted.
+Jan 01 00:29:51.000 [notice] Time to fetch any signatures that we're missing.
+Jan 01 00:30:01.000 [notice] Time to publish the consensus and discard old votes
+Jan 01 00:30:01.000 [notice] Published ns consensus
+Jan 01 00:30:01.000 [notice] Published microdesc consensus
+Jan 01 00:30:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:31:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:32:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:33:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:34:21.000 [notice] Time to vote.
+Jan 01 00:34:21.000 [notice] Choosing valid-after time in vote as 2000-01-01 00:35:00: consensus_set=1, last_interval=300
+Jan 01 00:34:21.000 [notice] Vote posted.
+Jan 01 00:34:31.000 [notice] Time to fetch any votes that we're missing.
+Jan 01 00:34:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:34:41.000 [notice] Time to compute a consensus.
+Jan 01 00:34:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:34:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:34:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:34:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:34:41.000 [notice] Consensus computed; uploading signature(s)
+Jan 01 00:34:41.000 [notice] Signature(s) posted.
+Jan 01 00:34:51.000 [notice] Time to fetch any signatures that we're missing.
+Jan 01 00:35:01.000 [notice] Time to publish the consensus and discard old votes
+Jan 01 00:35:01.000 [notice] Published ns consensus
+Jan 01 00:35:01.000 [notice] Published microdesc consensus
+Jan 01 00:35:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:36:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:37:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:38:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:39:21.000 [notice] Time to vote.
+Jan 01 00:39:21.000 [notice] Choosing valid-after time in vote as 2000-01-01 00:40:00: consensus_set=1, last_interval=300
+Jan 01 00:39:21.000 [notice] Vote posted.
+Jan 01 00:39:31.000 [notice] Time to fetch any votes that we're missing.
+Jan 01 00:39:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:39:41.000 [notice] Time to compute a consensus.
+Jan 01 00:39:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:39:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:39:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:39:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:39:41.000 [notice] Consensus computed; uploading signature(s)
+Jan 01 00:39:41.000 [notice] Signature(s) posted.
+Jan 01 00:39:51.000 [notice] Time to fetch any signatures that we're missing.
+Jan 01 00:40:01.000 [notice] Time to publish the consensus and discard old votes
+Jan 01 00:40:01.000 [notice] Published ns consensus
+Jan 01 00:40:01.000 [notice] Published microdesc consensus
+Jan 01 00:40:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:41:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:42:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:43:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:44:21.000 [notice] Time to vote.
+Jan 01 00:44:21.000 [notice] Choosing valid-after time in vote as 2000-01-01 00:45:00: consensus_set=1, last_interval=300
+Jan 01 00:44:21.000 [notice] Vote posted.
+Jan 01 00:44:31.000 [notice] Time to fetch any votes that we're missing.
+Jan 01 00:44:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:44:41.000 [notice] Time to compute a consensus.
+Jan 01 00:44:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:44:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:44:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:44:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:44:41.000 [notice] Consensus computed; uploading signature(s)
+Jan 01 00:44:41.000 [notice] Signature(s) posted.
+Jan 01 00:44:51.000 [notice] Time to fetch any signatures that we're missing.
+Jan 01 00:45:01.000 [notice] Time to publish the consensus and discard old votes
+Jan 01 00:45:01.000 [notice] Published ns consensus
+Jan 01 00:45:01.000 [notice] Published microdesc consensus
+Jan 01 00:45:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:46:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:47:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:48:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:49:21.000 [notice] Time to vote.
+Jan 01 00:49:21.000 [notice] Choosing valid-after time in vote as 2000-01-01 00:50:00: consensus_set=1, last_interval=300
+Jan 01 00:49:21.000 [notice] Vote posted.
+Jan 01 00:49:31.000 [notice] Time to fetch any votes that we're missing.
+Jan 01 00:49:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:49:41.000 [notice] Time to compute a consensus.
+Jan 01 00:49:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:49:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:49:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:49:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:49:41.000 [notice] Consensus computed; uploading signature(s)
+Jan 01 00:49:41.000 [notice] Signature(s) posted.
+Jan 01 00:49:51.000 [notice] Time to fetch any signatures that we're missing.
+Jan 01 00:50:01.000 [notice] Time to publish the consensus and discard old votes
+Jan 01 00:50:01.000 [notice] Published ns consensus
+Jan 01 00:50:01.000 [notice] Published microdesc consensus
+Jan 01 00:50:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:51:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:52:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:53:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:54:21.000 [notice] Time to vote.
+Jan 01 00:54:21.000 [notice] Choosing valid-after time in vote as 2000-01-01 00:55:00: consensus_set=1, last_interval=300
+Jan 01 00:54:21.000 [notice] Vote posted.
+Jan 01 00:54:31.000 [notice] Time to fetch any votes that we're missing.
+Jan 01 00:54:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:54:41.000 [notice] Time to compute a consensus.
+Jan 01 00:54:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:54:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:54:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:54:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:54:41.000 [notice] Consensus computed; uploading signature(s)
+Jan 01 00:54:41.000 [notice] Signature(s) posted.
+Jan 01 00:54:51.000 [notice] Time to fetch any signatures that we're missing.
+Jan 01 00:55:01.000 [notice] Time to publish the consensus and discard old votes
+Jan 01 00:55:01.000 [notice] Published ns consensus
+Jan 01 00:55:01.000 [notice] Published microdesc consensus
+Jan 01 00:55:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:56:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:57:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:58:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:59:21.000 [notice] Time to vote.
+Jan 01 00:59:21.000 [notice] Choosing valid-after time in vote as 2000-01-01 01:00:00: consensus_set=1, last_interval=300
+Jan 01 00:59:21.000 [notice] Vote posted.
+Jan 01 00:59:31.000 [notice] Time to fetch any votes that we're missing.
+Jan 01 00:59:36.000 [notice] While fetching directory info, no running dirservers known. Will try again later. (purpose 7)
+Jan 01 00:59:41.000 [notice] Time to compute a consensus.
+Jan 01 00:59:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:59:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:59:41.000 [notice] Computed bandwidth weights for Case 2b1 (Wgg=weight_scale, Wmd=Wgd) with v10: G=1 M=1 E=1 D=1 T=4
+Jan 01 00:59:41.000 [notice] Bandwidth-weight Case 1 is verified and valid.
+Jan 01 00:59:41.000 [notice] Consensus computed; uploading signature(s)
+Jan 01 00:59:41.000 [notice] Signature(s) posted.
+Jan 01 00:59:51.000 [notice] Time to fetch any signatures that we're missing.

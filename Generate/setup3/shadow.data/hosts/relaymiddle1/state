@@ -1,0 +1,37 @@
+# Tor state file last generated on 2000-01-01 00:59:51 local time
+# Other times below are in UTC
+# You *do not* need to edit this file.
+
+BWHistoryReadEnds 2000-01-02 00:07:40
+BWHistoryReadInterval 86400
+BWHistoryReadValues 998466560
+BWHistoryReadMaxima 703488
+BWHistoryWriteEnds 2000-01-02 00:07:40
+BWHistoryWriteInterval 86400
+BWHistoryWriteValues 999009280
+BWHistoryWriteMaxima 704512
+BWHistoryDirReadEnds 2000-01-02 00:07:40
+BWHistoryDirReadInterval 86400
+BWHistoryDirReadValues 0
+BWHistoryDirReadMaxima 0
+BWHistoryDirWriteEnds 2000-01-02 00:07:40
+BWHistoryDirWriteInterval 86400
+BWHistoryDirWriteValues 0
+BWHistoryDirWriteMaxima 0
+Guard in=default rsa_id=5EE72D8CCC4DD74A4795C7CA9752BD0CBD3E49BC nickname=relayexitguard1 sampled_on=1999-12-23T01:33:07 sampled_by=0.3.2.10 listed=1
+Guard in=default rsa_id=63F4465D2C7ADA3BB6ECA219BCDCEE48BCD08A9F nickname=4uthority1 sampled_on=1999-12-31T17:47:25 sampled_by=0.3.2.10 listed=1 confirmed_on=1999-12-25T09:29:19 confirmed_idx=0 pb_circ_attempts=109.000000 pb_circ_successes=109.000000 pb_successful_circuits_closed=109.000000
+TorVersion Tor 0.3.2.10 (git-31cc63deb69db819)
+LastRotatedOnionKey 2000-01-01 00:07:40
+LastWritten 2000-01-01 00:59:51
+TotalBuildTimes 115
+CircuitBuildTimeBin 425 6
+CircuitBuildTimeBin 475 23
+CircuitBuildTimeBin 525 50
+CircuitBuildTimeBin 575 12
+CircuitBuildTimeBin 625 7
+CircuitBuildTimeBin 675 4
+CircuitBuildTimeBin 725 5
+CircuitBuildTimeBin 775 3
+CircuitBuildTimeBin 825 3
+CircuitBuildTimeBin 1025 1
+CircuitBuildTimeBin 1175 1

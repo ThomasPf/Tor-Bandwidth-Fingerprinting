@@ -1,0 +1,3 @@
+Scenario 6
+	multiple(8) noise client with 2 MiB download attempt with random pauses, starting at the same time
+	with emphasis on the middle relay having significantly lower bandwidth than edge relays
