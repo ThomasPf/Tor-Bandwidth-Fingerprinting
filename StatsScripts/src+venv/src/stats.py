@@ -1,5 +1,6 @@
 import re, getopt, sys
 from os import listdir
+from os import getcwd
 from os import path as pt
 from os.path import isfile, join, isdir
 
@@ -120,6 +121,13 @@ def main(argv):
     global mypath
     global base_path
     global cherry_picked
+    path = getcwd()
+    print(path)
+    path = path[:path.find('StatsScripts/')]
+    print(path)
+    base_path = path+"extracted/"
+    mypath = path+"extracted/"
+
     try:
         opts, args = getopt.getopt(argv, "hw:p:c:", ["window=", "path=", "cherry="])
     except getopt.GetoptError:
