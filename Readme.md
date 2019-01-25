@@ -5,7 +5,7 @@ victim named `victimclient` in `shadow.config.xml` file and adversary named `adv
 * Run it, so you get `shadow.data` log outputs.
 * Run `python3 ../../tools/throughput_extractor/throughput_extractor.py` - this by default looks into `shadow.data/hosts/adversaryclient` and `victimclient` directories respectively for corresponding tgen log files and stores extracted throughputs into `./extracted_throughputs/setup` directory for statistical evaluation. (This is because `stats.py` currently looks for setup subdirectories).  
 * `mkdir stat_results` and `cd` into it. 
-* Run `python3 ../../../tools/stats/stats.py -w {windowsize} -p ../extracted_throughputs`.
+* Run `python3 ../../../tools/stats/stats.py -w {windowsize} -p ../extracted_throughputs/`.
 * See the results stored in current directory.
 
 ## Directory structure
