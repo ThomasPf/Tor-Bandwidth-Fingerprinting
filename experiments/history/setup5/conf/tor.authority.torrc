@@ -1,0 +1,12 @@
+AuthoritativeDirectory 1
+V3AuthoritativeDirectory 1
+ORPort 9111
+DirPort 9112
+SocksPort 0
+V3BandwidthsFile shadow.data/hosts/torflowauthority/v3bw
+TestingDirAuthVoteGuard 63F4465D2C7ADA3BB6ECA219BCDCEE48BCD08A9F,5EE72D8CCC4DD74A4795C7CA9752BD0CBD3E49BC
+TestingDirAuthVoteGuardIsStrict 1
+TestingDirAuthVoteExit 5EE72D8CCC4DD74A4795C7CA9752BD0CBD3E49BC,2BC9A49ED4B506110D9F31F243CF23E45AA1D599
+TestingDirAuthVoteExitIsStrict 1
+ExitPolicy "reject *:*"
+

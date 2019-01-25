@@ -1,8 +1,0 @@
-# Tor state file last generated on 2000-01-01 00:15:32 local time
-# Other times below are in UTC
-# You *do not* need to edit this file.
-
-Guard in=default rsa_id=5EE72D8CCC4DD74A4795C7CA9752BD0CBD3E49BC nickname=relayexitguard1 sampled_on=1999-12-22T22:11:36 sampled_by=0.3.2.10 listed=1 confirmed_on=1999-12-21T00:42:39 confirmed_idx=0
-Guard in=default rsa_id=63F4465D2C7ADA3BB6ECA219BCDCEE48BCD08A9F nickname=4uthority1 sampled_on=1999-12-26T19:09:54 sampled_by=0.3.2.10 listed=1
-TorVersion Tor 0.3.2.10 (git-31cc63deb69db819)
-LastWritten 2000-01-01 00:15:32
