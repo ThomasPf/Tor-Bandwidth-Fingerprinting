@@ -1,16 +1,20 @@
-## How to transform a tgen log into a csv
+## Evaluating experiment
+* Store experiment in experiments/{experiment_name}.
+* Create all necessary config files for running an experiment with
+victim named `victimclient` in `shadow.config.xml` file and adversary named `adversaryclient`. 
+* Run it, so you get `shadow.data` log outputs.
+* Run `python3 ../../tools/throughput_extractor/throughput_extractor.py` - this by default looks into `shadow.data/hosts/adversaryclient` and `victimclient` directories respectively for corresponding tgen log files and stores extracted throughputs into `./extracted_throughputs/setup` directory for statistical evaluation. (This is because `stats.py` currently looks for setup subdirectories).  
+* `mkdir stat_results` and `cd` into it. 
+* Run `python3 ../../../tools/stats/stats.py -w {windowsize} -p ../extracted_throughputs`.
+* See the results stored in current directory.
 
-```bash
-python3 tools/main.py -f Generate/setup6/shadow.data/hosts/adversaryclient/stdout-adversaryclient.tgen.1001.log Generate/setup6/shadow.data/hosts/victimclient/stdout-victimclient.tgen.1001.log -l timestamp value -d extracted/setup6
-```
+## Directory structure
+* experiments - contains individual directory for each experiment
+* experiments/history - contains all experiments that were run prior to yesterday's setup8, which achieved great correlation
+* tools - contains individual directory per tool written
+* original_content - contains content created by previous authors - not ours
 
-## How to generate a correlation chart from the csv
-
-```bash
-python3 stats.py -p <path> -w <windowsize> -c <cherry-picked-test>
-```
-standard settings <br />
-path:     the extracted folder <br />
-          window:   200 <br />
-          cherry:   none <br />
+### Single Experiment Directory structure:
+	classic shadow config structure with shadow.data and shadow.log for generated outputs
+	+ extracted_results/setup as a target for the extracted csv files // stats.py as it is currently searches for directories named setup, so this is a quick workaround, though not optimal, we might want to change this.
 
