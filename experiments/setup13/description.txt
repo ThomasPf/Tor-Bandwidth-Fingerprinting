@@ -1,0 +1,3 @@
+Scenario 13
+	victimclient and adversaryclient share all the relays
+	5 noise clients downloading 4 MiB files in loop with 10-70 second pauses

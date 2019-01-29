@@ -3,7 +3,7 @@
 * Create all necessary config files for running an experiment with
 victim named `victimclient` in `shadow.config.xml` file and adversary named `adversaryclient`. 
 * Run it, so you get `shadow.data` log outputs.
-* Run `python3 ../../tools/throughput_extractor/throughput_extractor.py` - this by default looks into `shadow.data/hosts/adversaryclient` and `victimclient` directories respectively for corresponding tgen log files and stores extracted throughputs into `./extracted_throughputs/setup` directory for statistical evaluation. (This is because `stats.py` currently looks for setup subdirectories).  
+* Run `python3 ../../tools/throughput_extractor/throughput_extractor.py` - this by default looks into `shadow.data/hosts/adversaryclient` and `victimclient` directories respectively for corresponding tgen log files and stores extracted throughputs into `./extracted_throughputs/setup` directory for statistical evaluation. (This is because `stats.py` currently looks for setup subdirectories). The default labels for csv files are `timestamp, value`.
 * `mkdir stat_results` and `cd` into it. 
 * Run `python3 ../../../tools/stats/stats.py -w {windowsize} -p ../extracted_throughputs/`.
 * See the results stored in current directory.

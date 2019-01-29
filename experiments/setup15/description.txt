@@ -1,0 +1,3 @@
+Scenario 15
+	victimclient and adversaryclient share only one relay - the bottleneck
+	5 noise clients downloading 4 MiB files in loop with 30 second pauses

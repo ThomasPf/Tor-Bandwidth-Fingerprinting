@@ -1,0 +1,82 @@
+<shadow stoptime="3600" preload="~/.shadow/lib/libshadow-interpose.so" environment="OPENSSL_ia32cap=~0x200000200000000;EVENT_NOSELECT=1;EVENT_NOPOLL=1;EVENT_NOKQUEUE=1;EVENT_NODEVPOLL=1;EVENT_NOEVPORT=1;EVENT_NOWIN32=1">
+  <topology>
+    <![CDATA[<?xml version="1.0" encoding="utf-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+      <key attr.name="packetloss" attr.type="double" for="edge" id="d9" />
+      <key attr.name="jitter" attr.type="double" for="edge" id="d8" />
+      <key attr.name="latency" attr.type="double" for="edge" id="d7" />
+      <key attr.name="type" attr.type="string" for="node" id="d5" />
+      <key attr.name="bandwidthup" attr.type="int" for="node" id="d4" />
+      <key attr.name="bandwidthdown" attr.type="int" for="node" id="d3" />
+      <key attr.name="countrycode" attr.type="string" for="node" id="d2" />
+      <key attr.name="ip" attr.type="string" for="node" id="d1" />
+      <key attr.name="packetloss" attr.type="double" for="node" id="d0" />
+      <graph edgedefault="undirected">
+        <node id="poi-1">
+          <data key="d0">0.0</data>
+          <data key="d1">0.0.0.0</data>
+          <data key="d2">US</data>
+          <data key="d3">10240</data>
+          <data key="d4">10240</data>
+          <data key="d5">net</data>
+        </node>
+        <edge source="poi-1" target="poi-1">
+          <data key="d7">50.0</data>
+          <data key="d8">0.0</data>
+          <data key="d9">0.0</data>
+        </edge>
+      </graph>
+    </graphml>]]>
+  </topology>
+  <plugin id="tor" path="~/.shadow/lib/libshadow-plugin-tor.so"/>
+  <plugin id="tor-preload" path="~/.shadow/lib/libshadow-preload-tor.so"/>
+  <plugin id="torctl" path="~/.shadow/lib/libshadow-plugin-torctl.so"/>
+  <plugin id="tgen" path="~/.shadow/lib/libshadow-plugin-tgen.so"/>
+  
+  <host id="server1" iphint="182.22.59.229" typehint="server" bandwidthup="102400" bandwidthdown="102400" quantity="1" cpufrequency="10000000">
+    <process plugin="tgen" starttime="1" arguments="conf/tgen.server.graphml.xml"/>
+  </host>
+  <host id="server2" iphint="182.22.59.230" typehint="server" bandwidthup="102400" bandwidthdown="102400" quantity="1" cpufrequency="10000000">
+    <process plugin="tgen" starttime="1" arguments="conf/tgen.server.graphml.xml"/>
+  </host>
+  <host id="4uthority1" iphint="100.0.0.1" typehint="relay" bandwidthdown="6400" bandwidthup="6400" quantity="1" cpufrequency="3000000">
+    <process plugin="tor" preload="tor-preload" starttime="5" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.authority.torrc"/>
+    <process plugin="torctl" starttime="6" arguments="localhost 9051 BW"/>
+  </host>
+  <host id="relayexitguard1" typehint="relay" bandwidthdown="11336" bandwidthup="11435" quantity="1" cpufrequency="2200000">
+    <process plugin="tor" preload="tor-preload" starttime="60" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.exitguard.torrc --BandwidthRate 10485760 --BandwidthBurst 12582912"/>
+    <process plugin="torctl" starttime="61" arguments="localhost 9051 BW"/>
+  </host>
+  <host id="relayexitguard2" typehint="relay" bandwidthdown="14590" bandwidthup="14590" quantity="1" cpufrequency="2200000">
+    <process plugin="tor" preload="tor-preload" starttime="60" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.exitguard.torrc --BandwidthRate 10485760 --BandwidthBurst 12582912"/>
+    <process plugin="torctl" starttime="61" arguments="localhost 9051 BW"/>
+  </host>
+  <host id="relayexit1" iphint="5.34.183.105" typehint="relay" bandwidthdown="10240" bandwidthup="10240" quantity="1" cpufrequency="2800000">
+    <process plugin="tor" preload="tor-preload" starttime="260" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.exit.torrc --BandwidthRate 1048576 --BandwidthBurst 1048576"/>
+    <process plugin="torctl" starttime="261" arguments="localhost 9051 BW"/>
+  </host>
+    <host id="relayexit2" iphint="5.34.183.106" typehint="relay" bandwidthdown="20400" bandwidthup="20400" quantity="1" cpufrequency="2800000">
+    <process plugin="tor" preload="tor-preload" starttime="260" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.exit.torrc --BandwidthRate 1048576 --BandwidthBurst 1048576"/>
+    <process plugin="torctl" starttime="261" arguments="localhost 9051 BW"/>
+  </host>
+  <host id="relaymiddle1" iphint="45.125.166.58" typehint="relay" bandwidthdown="3600" bandwidthup="3600" quantity="1" cpufrequency="3000000">
+    <process plugin="tor" preload="tor-preload" starttime="460" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.middle.torrc --BandwidthRate 1073741824 --BandwidthBurst 1073741824"/>
+    <process plugin="torctl" starttime="461" arguments="localhost 9051 BW"/>
+  </host>
+  <host id="relaymiddle2" iphint="45.125.166.59" typehint="relay" bandwidthdown="10240" bandwidthup="10240" quantity="1" cpufrequency="3000000">
+    <process plugin="tor" preload="tor-preload" starttime="460" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.middle.torrc --BandwidthRate 1073741824 --BandwidthBurst 1073741824"/>
+    <process plugin="torctl" starttime="461" arguments="localhost 9051 BW"/>
+  </host>
+  <host id="adversaryclient" typehint="client" bandwidthup="102400" bandwidthdown="102400" quantity="1" cpufrequency="3000000">
+    <process plugin="tor" preload="tor-preload" starttime="900" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.client.torrc"/>
+    <process plugin="tgen" starttime="1200" arguments="conf/tgen.toradversaryclient.graphml.xml"/>
+  </host>
+  <host id="victimclient" typehint="client" bandwidthup="102400" bandwidthdown="102400" quantity="1" cpufrequency="3000000">
+    <process plugin="tor" preload="tor-preload" starttime="900" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.client.torrc"/>
+    <process plugin="tgen" starttime="1200" arguments="conf/tgen.torvictimclient.graphml.xml"/>
+  </host>
+  <host id="noiseclient" typehint="client" bandwidthup="102400" bandwidthdown="102400" quantity="5" cpufrequency="3000000">
+    <process plugin="tor" preload="tor-preload" starttime="900" arguments="--Address ${NODEID} --Nickname ${NODEID} --DataDirectory shadow.data/hosts/${NODEID} --GeoIPFile ~/.shadow/share/geoip --defaults-torrc conf/tor.common.torrc -f conf/tor.client.torrc"/>
+    <process plugin="tgen" starttime="1230" arguments="conf/tgen.torperf4Mclient.graphml.xml"/>
+  </host>
+</shadow>
+

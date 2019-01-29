@@ -1,0 +1,3 @@
+Scenario 16
+	victimclient and adversaryclient don't share any relay
+	5 noise clients downloading 4 MiB files in loop with 30 second pauses
