@@ -1,4 +1,9 @@
 ## Dependencies
+* shadow installed with tor-plugin
+* shadow tor-plugins code changed so the manual selection of tor circuits is possible
+
+### Python Dependencies
+
 
 ## Evaluating experiment
 Here, by experiment we mean self-stand network scenario with complete shadow configuration structure (shadow.config.xml and corresponding /conf directory)
