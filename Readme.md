@@ -16,5 +16,5 @@ victim named `victimclient` in `shadow.config.xml` file and adversary named `adv
 
 ### Single Experiment Directory structure:
 	classic shadow config structure with shadow.data and shadow.log for generated outputs
-	+ extracted_results/setup as a target for the extracted csv files // stats.py as it is currently searches for directories named setup, so this is a quick workaround, though not optimal, we might want to change this.
+	+ extracted_results/setup as a target for the extracted csv files // stats.py as it is currently searches for directories named setup, so this is a quick workaround, though not optimal, we might want to change this. There is an existing workaround which is easy to use, but requires 5 min of extra reading
 
