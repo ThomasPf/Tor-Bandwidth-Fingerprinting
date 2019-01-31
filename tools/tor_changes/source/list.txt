@@ -1,0 +1,6 @@
+torclient1 relay1 relay3 exit1 
+torclient2 relay2 relay3 exit1  
+torclient3 relay4 relay6 exit1 
+torclient4 relay5 relay6 exit1 
+ 
+ 

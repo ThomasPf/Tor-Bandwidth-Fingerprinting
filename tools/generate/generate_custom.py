@@ -188,10 +188,9 @@ def main():
     ap.add_argument('--nperf5m', action="store", type=float, dest="nperf5m", help="number N of 5MiB perf clients", metavar='F', default=NPERF5M)
     ap.add_argument('--nservers', action="store", type=int, dest="nservers", help="number N of fileservers", metavar='N', default=NSERVERS)
     ap.add_argument('--geoippath', action="store", dest="geoippath", help="path to geoip file, needed to convert IPs to cluster codes", default=INSTALLPREFIX+"share/geoip")
-
-    ap.add_argument('--custom-relay-selection', action="store", type=str, help="Enable custom relay selection", default="conf/paths.txt")
-    ap.add_argument('--custom-relay-selection-path', action="store", type=str, help="Filepath for the custom relay selection file", default="conf/paths.txt")
-    ap.add_argument('--tor-log-level', action="store", type=str, help="Tor log level: err, warn, notice, info, debug", default="info")
+    ap.add_argument('--custom-relay-selection', action="store", dest="customrelayselection", type=str, help="Enable custom relay selection", default="conf/paths.txt")
+    ap.add_argument('--custom-relay-selection-path', action="store", dest="customrelayselectionpath", type=str, help="Filepath for the custom relay selection file", default="conf/paths.txt")
+    ap.add_argument('--tor-log-level', action="store", dest="torloglevel", type=str, help="Tor log level: err, warn, notice, info, debug", default="info")
 
     # positional args (required)
     ap.add_argument('alexa', action="store", type=str, help="path to an ALEXA file (produced with contrib/parsealexa.py)", metavar='ALEXA', default=None)
@@ -1118,10 +1117,10 @@ PathBiasUseThreshold 10000\n\
 PathBiasCircThreshold 10000\n\
 ControlPort 9051\n'.format(auths_lines, auth_name_csv)
 
-    common += "Log " + args.tor-log-level + " stdout\n"
+    common += "Log " + args.torloglevel + " stdout\n"
 
-    if args.custom-relay-selection is not None:
-        common += "TestingPredefinedCircuitsFile" + args.custom-relay-selection-path + "\n"
+    if args.customrelayselection is not None:
+        common += "TestingPredefinedCircuitsFile" + args.customrelayselectionpath + "\n"
         log("custom-relay-selection enabled, added TestingPredefinedCircuitsFile to common torrc file")
 
     clients = \
