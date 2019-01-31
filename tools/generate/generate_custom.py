@@ -1120,7 +1120,7 @@ ControlPort 9051\n'.format(auths_lines, auth_name_csv)
     common += "Log " + args.torloglevel + " stdout\n"
 
     if args.customrelayselection is not None:
-        common += "TestingPredefinedCircuitsFile" + args.customrelayselectionpath + "\n"
+        common += "TestingPredefinedCircuitsFile " + args.customrelayselectionpath + "\n"
         log("custom-relay-selection enabled, added TestingPredefinedCircuitsFile to common torrc file")
 
     clients = \
