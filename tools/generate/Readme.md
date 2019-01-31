@@ -21,7 +21,7 @@ wget https://collector.torproject.org/archive/relay-descriptors/server-descripto
 tar xaf server-descriptors-2018-12.tar.xz
 ```
 
-Downlaod extra info descriptors, contain relay information that Tor clients do not need in order to function.
+Download extra info descriptors, contain relay information that Tor clients do not need in order to function.
 ```
 wget https://collector.torproject.org/archive/relay-descriptors/extra-infos/extra-infos-2018-12.tar.xz
 tar xaf extra-infos-2018-12.tar.xz
@@ -54,8 +54,8 @@ export PATH=${PATH}:~/shadow-plugin-tor/build/tor/src/or:~/shadow-plugin-tor/bui
 
 Create a directory for the new shadow topology
 ```
-mkdir mytor
-cd mytor
+mkdir 9relays7clients
+cd 9relays7clients
 ```
 
 View help
@@ -65,6 +65,6 @@ python generate_custom.py --help
 
 Example setting optional arguments
 ```
-python ~/shadow-plugin-tor/tools/generate_custom.py --nauths 1 --nrelays 9 --nclients 7 --num_web 5 --num_bulk 2 --nservers 7 --num_guards 3 --num_middles 3 --num_exits 3 ../alexa-top-1000-ips.csv ../2018-12-12-12-00-00-consensus ../server-descriptors-2018-12/ ../extra-infos-2018-12/ ../userstats-relay-country.csv > generate.log
+python generate_custom.py --nauths 1 --nrelays 9 --nclients 7 --num_web 5 --num_bulk 2 --nservers 7 --num_guards 3 --num_middles 3 --num_exits 3 ../alexa-top-1000-ips.csv ../2018-12-12-12-00-00-consensus ../server-descriptors-2018-12/ ../extra-infos-2018-12/ ../userstats-relay-country.csv > generate.log
 ```
 This will create a shadow.config.xml base with 3 guard nodes, 3 middle nodes, 3 exit nodes, 2 clients generating bulk traffic, 5 clients generating web traffic. 
