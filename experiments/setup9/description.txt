@@ -1,3 +1,3 @@
-Scenario 4
+Scenario 9
 	multiple noise client with 4 MiB download attempt with 30 seconds pauses, starting at different times
-	with emphasis on the middle relay having significantly lower bandwidth than edge relays
+	The adversary and victim share 1 relay - not the bottleneck
