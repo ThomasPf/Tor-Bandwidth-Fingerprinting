@@ -24,7 +24,7 @@ Here, by experiment we mean self-stand network scenario with complete shadow con
 * Store experiment in experiments/{experiment_name}.
 * Make sure that the desired victim is named `victimclient` in `shadow.config.xml` file and adversary is named `adversaryclient`. 
 * Run it, so you get `shadow.data` log outputs.
-* Run `python3 ../../tools/throughput_extractor/throughput_extractor.py` - this by default looks into `shadow.data/hosts/adversaryclient` and `victimclient` directories respectively for corresponding tgen log files and stores extracted throughputs into `./extracted_throughputs/setup` directory for statistical evaluation. (This is because `stats.py` currently looks for setup subdirectories). The default labels for csv files are `timestamp, value`.
+* Run `python3 ../../tools/throughput_extractor/throughput_extractor.py` - this by default looks into `shadow.data/hosts/adversaryclient` and `victimclient` directories respectively for corresponding tgen log files and stores extracted throughputs into `./extracted_throughputs/setup` directory for statistical evaluation. (This is because `stats.py` looks for setup subdirectories). The default labels for csv files are `timestamp, value`.
 * `mkdir stat_results`. 
 * Run `python3 ../../../tools/stats/stats.py -w {windowsize}.`
 * Run `python3 ../../../tools/stats/stats.py -h` for help
