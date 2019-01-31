@@ -7,7 +7,8 @@ Here, by experiment we mean self-stand network scenario with complete shadow con
 * Run it, so you get `shadow.data` log outputs.
 * Run `python3 ../../tools/throughput_extractor/throughput_extractor.py` - this by default looks into `shadow.data/hosts/adversaryclient` and `victimclient` directories respectively for corresponding tgen log files and stores extracted throughputs into `./extracted_throughputs/setup` directory for statistical evaluation. (This is because `stats.py` currently looks for setup subdirectories). The default labels for csv files are `timestamp, value`.
 * `mkdir stat_results`. 
-* Run `python3 ../../../tools/stats/stats.py -w {windowsize} -p ../extracted_throughputs/`.
+* Run `python3 ../../../tools/stats/stats.py -w {windowsize}.`
+* Run `python3 ../../../tools/stats/stats.py -h` for help
 * See the results stored in current directory.
 
 ## Directory structure
