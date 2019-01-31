@@ -10,10 +10,23 @@ DEFAULT_DIRECTORY = ['extracted_throughputs/setup/']
 DEFAULT_FILES = ['shadow.data/hosts/adversaryclient/stdout-adversaryclient.tgen.1001.log', 'shadow.data/hosts/victimclient/stdout-victimclient.tgen.1001.log']
 
 def parse_arguments():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '--files', nargs='+', default=DEFAULT_FILES)
-    parser.add_argument('-l', '--labels', nargs='+', default=DEFAULT_LABELS)
-    parser.add_argument('-d', '--directory', nargs=1, default=DEFAULT_DIRECTORY)
+    parser = argparse.ArgumentParser(description='Shadow throughput extractor script. Extracts throughput values'
+                        ' from tgen log files based on heartbeat messages and saves data into csv file format.'
+                        ' Created as a part of Blockchain Engineering'
+                        ' course project at TU Delft during 2018/2019')
+    
+    parser.add_argument('-f', '--files', nargs='+', default=DEFAULT_FILES, 
+                        help='specify the tgen log files for the throughput'
+                        ' extraction. Delimited by spaces.\nDefault value: ' + str(DEFAULT_FILES))
+    parser.add_argument('-l', '--labels', nargs='+', default=DEFAULT_LABELS, 
+                        help='specify the labels for values in generated .csv files. Delimited by spaces.'
+                        '\nDefault value: ' + str(DEFAULT_LABELS))
+    parser.add_argument('-d', '--directory', nargs=1, default=DEFAULT_DIRECTORY, 
+                        help='specify the directory for csv output storage. The target '
+                        'csv files are stored in the path relative to directory where the'
+                        ' extraction is run. The names of the csv files stored in the target'
+                        ' directory are in form /{original_tgen_log_filename/}.csv\n'
+                        'Default value: ' + str(DEFAULT_DIRECTORY))
     return parser.parse_args()
 
 if __name__ == '__main__':
