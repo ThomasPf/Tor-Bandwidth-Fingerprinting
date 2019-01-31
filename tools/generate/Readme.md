@@ -68,3 +68,6 @@ Example setting optional arguments
 python generate_custom.py --nauths 1 --nrelays 9 --nclients 7 --num_web 5 --num_bulk 2 --nservers 7 --num_guards 3 --num_middles 3 --num_exits 3 ../alexa-top-1000-ips.csv ../2018-12-12-12-00-00-consensus ../server-descriptors-2018-12/ ../extra-infos-2018-12/ ../userstats-relay-country.csv > generate.log
 ```
 This will create a shadow.config.xml base with 3 guard nodes, 3 middle nodes, 3 exit nodes, 2 clients generating bulk traffic, 5 clients generating web traffic. 
+
+### Adjust config files to requirements
+Now that we have a base topology to use we can manually tweak the configuration files for each of our different experiment scenarios.
