@@ -189,9 +189,9 @@ def main():
     ap.add_argument('--nservers', action="store", type=int, dest="nservers", help="number N of fileservers", metavar='N', default=NSERVERS)
     ap.add_argument('--geoippath', action="store", dest="geoippath", help="path to geoip file, needed to convert IPs to cluster codes", default=INSTALLPREFIX+"share/geoip")
 
-    ap.add_argument('--custom-relay-selection', action="store", type=int, help="Enable custom relay selection", default="conf/paths.txt")
-    ap.add_argument('--custom-relay-selection-path', action="store", help="Filepath for the custom relay selection file", default="conf/paths.txt")
-    ap.add_argument('--tor-log-level', action="store", help="Tor log level: err, warn, notice, info, debug", default="info")
+    ap.add_argument('--custom-relay-selection', action="store", type=str, help="Enable custom relay selection", default="conf/paths.txt")
+    ap.add_argument('--custom-relay-selection-path', action="store", type=str, help="Filepath for the custom relay selection file", default="conf/paths.txt")
+    ap.add_argument('--tor-log-level', action="store", type=str, help="Tor log level: err, warn, notice, info, debug", default="info")
 
     # positional args (required)
     ap.add_argument('alexa', action="store", type=str, help="path to an ALEXA file (produced with contrib/parsealexa.py)", metavar='ALEXA', default=None)

@@ -44,10 +44,9 @@ mkdir mytor
 cd mytor
 
 ##View help
-python ~/shadow-plugin-tor/tools/generate.py --help
-
-##Example using all defaults
-python ~/shadow-plugin-tor/tools/generate.py ../alexa-top-1000-ips.csv ../2018-12-12-12-00-00-consensus ../server-descriptors-2018-12 ../extra-infos-2018-12 ../userstats-relay-country.csv
+python generate_custom.py --help
 
 #Example setting optional arguments
-python ~/shadow-plugin-tor/tools/generate.py --nauths 1 --nrelays 20 --nclients 200 --nservers 20 --fweb 0.90 --fbulk 0.10 --nperf50k 10 --nperf1m 10 --nperf5m 10 ../alexa-top-1000-ips.csv ../2018-12-31-23-00-00-consensus ../server-descriptors-2018-12/ ../extra-infos-2018-12/ ../userstats-relay-country.csv
+python ~/shadow-plugin-tor/tools/generate_custom.py --nauths 1 --nrelays 9 --nclients 7 --num_web 5 --num_bulk 2 --nservers 7 --num_guards 3 --num_middles 3 --num_exits 3 ../alexa-top-1000-ips.csv ../2018-12-12-12-00-00-consensus ../server-descriptors-2018-12/ ../extra-infos-2018-12/ ../userstats-relay-country.csv > generate.log
+
+This will create a shadow.config.xml base with 3 guard nodes, 3 middle nodes, 3 exit nodes, 2 clients generating bulk traffic, 5 clients generating web traffic. 
