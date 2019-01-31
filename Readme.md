@@ -3,7 +3,21 @@
 * shadow tor-plugins code changed so the manual selection of tor circuits is possible
 
 ### Python Dependencies
+Python          3.7.2
 
+with the following packages installed 
+cycler	        0.10.0	0.10.0
+kiwisolver	    1.0.1	1.0.1
+matplotlib	    3.0.2	3.0.2
+numpy	        1.16.0	1.16.0
+pandas	        0.23.4	0.23.4
+pip	            10.0.1	19.0.1
+pyparsing	    2.3.1	2.3.1
+python-dateutil	2.7.5	2.7.5
+pytz	        2018.9	2018.9
+scipy	        1.2.0	1.2.0
+setuptools	    39.1.0	40.6.3
+six	            1.12.0	1.12.0
 
 ## Evaluating experiment
 Here, by experiment we mean self-stand network scenario with complete shadow configuration structure (shadow.config.xml and corresponding /conf directory)
